@@ -41,12 +41,3 @@ Sjekk ut avsnittet `Documenting Scripts` i [script-dokumentasjonen](https://gith
 
 For å gi huboten din litt personlighet og gjøre den litt mindre statisk. Prøv for eksempel å ta i bruk `res.random` til å gi tilfeldig responser på `hubot hello`
 
-## Del 5 - input
-
-Deler av kommandoer til hubot kan være innhold som er nyttig eller blir input til det som skal gjøres 
-
-Lag en kommando `hubot ask et spørsmål` som svarer med `Åja, så du lurer på et spørsmål`
-
-Sjekk ut avsnittet `Capturing data` i [script-dokumentasjonen](https://github.com/github/hubot/blob/master/docs/scripting.md)
-
-
