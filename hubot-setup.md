@@ -33,7 +33,7 @@ bin/hubot
 ```
 Dette vil starte hubot sit innebygde shell adapter, og du vil kunne teste botten din lokalt. Du kan nå intragere med botten din og eksempel scriptene som følger med. Typisk bruk av boten er i form av `<din bots navn> <en commando>` Eks:
 
-```sh
+```
 bekkbot> bekkbot ping
 bekkbot> PONG
 
