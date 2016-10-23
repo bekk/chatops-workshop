@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		
+		<!-- Custom -->
+		<link rel="stylesheet" href="custom.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Slack &amp; hubot</h1>
+					<p class="note">En chatops-workshop av Alexander, Tine og Tomas</p>
+				</section>
+				<section>
+					<h3>Vi skal få en chatops-intro</h3>
+					<ol>
+						<li class="fragment">Slack: Utforske features</li>
+						<li class="fragment">Hubot: Hva kan vi bruke det til?</li>
+						<li class="fragment">Workshop: Lage en bot</li>
+					</ol>
+					<aside class="notes">
+						Agenda for dagen
+                        <ul>
+							<li>Slack: features, integrasjoner, url-integrasjoner</li>
+							<li>Hubot: Når slacks innebygde ikke strekker til</li>
+							<li>Workshop: Lage en enkel bot, -> Trello (?)</li>
+                        </ul>
+                    </aside>
+				</section>
+				<section>
+					<h3>Chatops</h3>
+					<aside class="notes">
+						Hva handler det om? 
+                        <ul>
+							<li>Termen tilhører Github</li>
+							<li>Chat: handler om et sted for dialog og events</li>
+							<li>Chat: sitte i åpent landskap -> sitte i samme chatrom</li>
+							<li>Ops: ikke bare flytte samtaler men også prosedyrer/kommandoer</li>
+                        </ul>
+                    </aside>
+				</section>
+				<section>
+					<h3>Fordeler</h3>
+					<ul>
+						<li class="fragment">Synlighet</li>
+						<li class="fragment">Selvforsterkende dokumentasjon</li>
+						<li class="fragment">Ett utgangspunkt for mange verktøy</li>
+					</ul>
+					<aside class="notes">
+                        <ul>
+							<li>Tilstedeværelse</li>
+							<li>Enklere onboarding</li>
+                        </ul>
+                    </aside>
+				</section>
+				<section>
+					<h2>#sukker-deploy</h2>
+					<img src="./img/navbot-deploy.png"/>
+					<aside class="notes">
+						<ul>
+							<li>Synlighet</li>
+							<li>Selvforsterkende dokumentasjon</li>
+							<li>En av mine favoritt-ting: boten sier i fra selv</li>
+							<li>Ett utgangspunkt for mange verktøy</li>
+						</ul>
+                    </aside>
+				</section>
+				<section>
+					<h3>Tools of the trade</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>What?</th>
+								<th>Where?</th>
+								<th>$$$?</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Slack</td>
+								<td>Web</td>
+								<td>$*</td>
+							</tr>
+							<tr>
+								<td>Hipchat</td>
+								<td>Hosted eller web</td>
+								<td>$*</td>
+							</tr>
+							<tr>
+								<td>Mattermost</td>
+								<td>Hosted</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>IRC</td>
+								<td>Hosted</td>
+								<td>0</td>
+							</tr>
+						</tbody>
+					</table>
+					<aside class="notes">
+                        <ul>
+							<li>* betyr at det finnes begrensede gratisvarianter</li>
+							<li>Mulighet for *ops på alle (i alle fall hubot)</li>
+							<li>Forskjellige økosystemer og muligheter</li>
+							<li>NAV har vært fra IRC -> Mattermost -> Hipchat</li>
+                        </ul>
+                    </aside>
+				</section>
+				<section>
+					<h2>Integrasjoner</h2>
+					<ul>
+						<li>Ferdige integrasjoner</li>
+						<li>URL-integrasjoner</li>
+						<li>Custom integrasjoner</li>
+						<li>Post til deg, kanal eller </li>
+					</ul>
+				</section>
+				<section>
+					<h2>Ferdige integrasjoner finnes for mange verktøy</h2>
+					<ul>
+						<li class="fragment">Github (Bitbucket)</li>
+						<li class="fragment">Jenkins (TravisCI, CircleCI)</li>
+						<li class="fragment">Google Apps</li>
+						<li class="fragment">Heroku</li>
+					</ul>
+
+					<p class="note fragment"><a href="https://bekk.slack.com/apps">bekk.slack.com/apps</a></p>
+
+				</section>
+				<section>
+					<h2>Men ofte lite customizable</h2>
+					<img src="./img/heroku.png" />
+					<ul>
+						<li class="fragment">Heroku har -ingen- konfigurasjon</li>
+						<li class="fragment">JIRA-integrasjons fungerer ikke nødvendigvis</li>
+						<li class="fragment">TODO: mer?</li>
+						<li class="fragment">Kan kreve tilganger/endringer man ikke får</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Heroku viser kun beskjed ved deploy</li>
+							<li>JIRA-integrasjon avhenger av versjon og konfigurasjon</li>
+						</ul>
+                    </aside>
+				</section>
+				<section>
+					<h2>Hvor nyttig er det?</h2>
+					<aside class="notes">
+						Er det faktisk nyttig for noe?
+                    </aside>
+				</section>
+				<section>
+					<h3>For PR og kodeendringer</h3>
+					<img src="./img/jira_merge.png" />
+					<aside class="notes">
+						Problem: PR blir liggende lenge.
+					</aside>
+				</section>
+				<section>
+					<h3>For systemfeil og metrikker</h3>
+					<img src="./img/aws_logs.png" />
+					<aside class="notes">
+						Problem: Error logs er overfylte og ignorerte.
+					</aside>
+				</section>
+				<section>
+					<h3>For brukerfeedback</h3>
+					<img src="./img/fdesk.png" />
+					<aside class="notes">Problem: Utviklere får ikke høre direkte feedback fra brukere. Blir liggende "i systemet" og omformulert på veien til oss. </aside>
+				</section>
+				<section>
+					Custom Slack-integrasjoner
+				</section>
+				<section>
+					Hva er Hubot?
+				</section>
+				<section>
+					Installere Hubot
+				</section>
+				<section>
+					Andres pakker med Hubot
+				</section>
+				<section>
+					Hubot + Enkel HTTP-tjeneste
+				</section>
+				<section>
+					<h2>Oppsummering</h2>
+
+				</section>
+				<section>
+					Spørsmål?
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
