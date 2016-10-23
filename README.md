@@ -1,6 +1,6 @@
 # chatops-workshop
 
-Presentasjon på [https://bekk.github.io/chatops-workshop/](https://bekk.github.io/chatops-workshop/#/
+Presentasjon på [bekk.github.io/chatops-workshop](https://bekk.github.io/chatops-workshop/#/)
 
 Start med oppgavene som følger:
   - [Sett opp hubot](https://github.com/bekk/chatops-workshop/blob/master/hubot-setup.md)
