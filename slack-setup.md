@@ -2,8 +2,6 @@
 
 For å skille mellom hverandres boter, opprett en egen kanal i Slack. Senere vil du gjøre alle dine integrasjoner mot denne kanalen, så blir det enkelt å vite hvilken integrasjon som er din.
 
-<kbd>Z</kbd>
-
 ## Del 1: Opprett din egen kanal
 Gå til Slack, trykk <kbd>⌘</kbd>+<kbd>T</kbd> (<kbd>Ctrl</kbd>+<kbd>T</kbd>) og skriv inn navnet på kanalen, f.eks **<mitt-navn\>-slack**. Du kan også klikke på ikonet (+) til høyre for ```CHANNELS``` i sidebaren.
 
