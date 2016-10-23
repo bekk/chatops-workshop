@@ -5,33 +5,36 @@ Det første vi trenger å gjøre er å få vår egen hubot opp å kjøre =)
 ## Del 1: Installasjon
 Det første vi trenger er [node & npm](https://nodejs.org/en/download/). Når du installerer node så vil npm følge med.
 
-Deretter installer hubot generatoren [yeoman](http://yeoman.io/) med: 
+Deretter trenger vi [yeoman](http://yeoman.io/) og hubot-generatoren, som kan installeres slik: 
   ```
  %  npm install -g yo generator-hubot
  ```
 
-
 ## Del 2: Generer hubot
-Med yeoman installert er det på tide å generer vår første hubot instanse. 
+Med yeoman installert er det på tide å generer vår første hubot-instanse. 
 
-Først lag en mappe hvor du ønsker å genere hubot. Yeoman bruker typisk dette mappe navnet som et eksempel på navnet botten din kan få.
+Lag en mappe hvor du ønsker å genere hubot. Yeoman bruker typisk dette mappenavnet som et forslag til botnavn.
 
-Deretter generer en hubot instanse ved å skrive: 
+Ikke kall boten din `hubot`, det genererer en feilmelding aka `Refusing to install hubot as a dependency of itself`.
+
+For å generere din egen hubot-instanse, bruk kommandoen: 
 ```
 yo hubot
 ``` 
-Du vil nå bli spurt en serie spørsmål om botten din som vil bli brukt i oppsettet som blir generert. Hva den skal hete, hvem som eiere den etc. 
 
-Den viktigste delen her er hvilket adapter du ønsker å bruke. Adaptere er hubot sin måte å intragere med forskjelle chatte platformer. Eksempler kan være; slack, campfire, hipchat. Ved å bytte adapter kan du enkelt bytte hvilken chatte client din hubot kan prate med. En liste over de forskjellige adapterne kan du finne [her](https://hubot.github.com/docs/adapters/). Hubot har medfølger alltid et shell adapter for å bruke lokalt i din terminal for testing. 
+Du vil nå bli spurt en serie spørsmål om boten din som vil bli brukt i oppsettet. Hva den skal hete, hvem som eiere den etc. 
 
-Det var det, nå har du din første fungerende bot! På tide å prøvekjøre vidunderet
+Den viktigste delen her er hvilket adapter du ønsker å bruke. Adaptere er hubot sin måte å integrere med forskjelle chatte-platformer. Eksempler kan være; slack, campfire, hipchat. Ved å bytte adapter kan du enkelt bytte hvilken chatte-client din hubot kan prate med. En liste over de forskjellige adapterne kan du finne [her](https://hubot.github.com/docs/adapters/). Hubot har alltid et shell-adapter som følger med for å brukes lokalt til lokal testing. 
+
+Det var det, nå har du din første fungerende bot! På tide å prøvekjøre vidunderet.
 
 ## Del 3: Kjør hubot lokalt: 
+
 Alt du trenger å gjøre for å kjøre hubot-en din lokalt er å kjøre: 
 ```sh
 bin/hubot
 ```
-Dette vil starte hubot sit innebygde shell adapter, og du vil kunne teste botten din lokalt. Du kan nå intragere med botten din og eksempel scriptene som følger med. Typisk bruk av boten er i form av `<din bots navn> <en commando>` Eks:
+Dette vil starte hubot sit innebygde shell-adapter, og du vil kunne teste boten din lokalt. Du kan nå snakke med boten din og eksempel-scriptene som følger med. Typisk bruk av boten er i form av `<botnavn> <kommando>` Eks:
 
 ```
 bekkbot> bekkbot ping
@@ -60,4 +63,6 @@ bekkbot translate me from <source> into <target> <phrase> - Translates <phrase> 
 ship it - Display a motivation squirrel
 ```
 
-Legg merke til at shell adapteret ikke er perfekt og krever av og til at du trykker enter for å kunne starte/sende nye bedskjeder til botten din. Legg også merke til at du må som oftest bruke navnet på botten din for å kunne kjøre de forskjellige kommandoene. Uten så vil du ikke få noe svar. Men det finnes også unntak som `ship it` teksten som trigger en kommando hos botten uansett om du skriver navnet eller ikke. 
+Legg merke til at shell-adapteret ikke er perfekt og krever av og til at du trykker enter for å kunne starte/sende nye bedskjeder til boten din. 
+
+Du må som oftest bruke navnet på boten din for å kunne kjøre de forskjellige kommandoene, uten vil du ikke få noe svar. Det finnes også unntak som `ship it`-teksten som trigger en kommando uansett. Vi skal se mer på disse forskjellene videre i workshopen.  
