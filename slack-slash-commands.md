@@ -8,7 +8,7 @@
 
 Vi kan også lage egne slash-kommandoer selv. Imotsetning til de fleste integrasjoner (inkl. incoming og outgoing webhooks), tilhører ikke slash commands en person eller går mot en kanal. **Slash commands trigge uansett hvilken kanal eller person som forsøker å bruker de**.
 
-Slash commands gjør enten ```POST``` eller ```GET``` mot en URL du definerer. Payloaden den sender og responsen den forventer, er spesifikk for Slack. Man må med andre ord kjøre et offentlig tilgjengelig API-endepunkt for å sette opp Slash commands. Siden det sendes med et token i forespørslene, kan man dog verifisere at forespørslene kommer fra Slask.
+Slash commands gjør enten ```POST``` eller ```GET``` mot en URL du definerer. Payloaden den sender og responsen den forventer, er spesifikk for Slack. Man må med andre ord kjøre et offentlig tilgjengelig API-endepunkt for å sette opp Slash commands. Siden det sendes med et token i forespørslene, kan man dog verifisere at forespørslene kommer fra Slack.
 
 ## Steg 1: Opprett en slash command
 1. Gå til [apps](https://bekk.slack.com/apps) og søk etter ```Slash Commands```
