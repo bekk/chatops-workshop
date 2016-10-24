@@ -24,7 +24,9 @@ yo hubot
 
 Du vil nå bli spurt en serie spørsmål om boten din som vil bli brukt i oppsettet. Hva den skal hete, hvem som eiere den etc. 
 
-Den viktigste delen her er hvilket adapter du ønsker å bruke. Adaptere er hubot sin måte å integrere med forskjelle chatte-platformer. Eksempler kan være; slack, campfire, hipchat. Ved å bytte adapter kan du enkelt bytte hvilken chatte-client din hubot kan prate med. En liste over de forskjellige adapterne kan du finne [her](https://hubot.github.com/docs/adapters/). I denne workshopen kommer vi til å bruke : `slack`. Hubot har alltid et shell-adapter som følger med for å brukes lokalt til lokal testing. 
+Den viktigste delen her er hvilket adapter du ønsker å bruke. Adaptere er hubot sin måte å integrere med forskjelle chatte-platformer. Eksempler kan være; slack, campfire, hipchat. Ved å bytte adapter kan du enkelt bytte hvilken chatte-client din hubot kan prate med. En liste over de forskjellige adapterne kan du finne [her](https://hubot.github.com/docs/adapters/). I denne workshopen kommer vi til å bruke `slack`. 
+
+Hubot har alltid et shell-adapter som følger med for å brukes lokalt og for lokal testing. 
 
 Det var det, nå har du din første fungerende bot! På tide å prøvekjøre vidunderet.
 
