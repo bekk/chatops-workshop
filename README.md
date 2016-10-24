@@ -4,6 +4,7 @@ Presentasjon på [bekk.github.io/chatops-workshop](https://bekk.github.io/chatop
 
 ## Slack
 - [Oppsett](https://github.com/bekk/chatops-workshop/blob/master/slack-setup.md)
+- [Tilpassing av Slack](https://github.com/bekk/chatops-workshop/blob/master/slack-customize.md)
 - [Oppgave 1: Incoming Webhooks](https://github.com/bekk/chatops-workshop/blob/master/slack-incoming-webhooks.md)
 - [Oppgave 2: Slash commands](https://github.com/bekk/chatops-workshop/blob/master/slack-slash-commands.md)
 
