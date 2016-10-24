@@ -67,4 +67,21 @@ ship it - Display a motivation squirrel
 
 Legg merke til at shell-adapteret ikke er perfekt og krever av og til at du trykker enter for å kunne starte/sende nye bedskjeder til boten din. 
 
-Du må som oftest bruke navnet på boten din for å kunne kjøre de forskjellige kommandoene, uten vil du ikke få noe svar. Det finnes også unntak som `ship it`-teksten som trigger en kommando uansett. Vi skal se mer på disse forskjellene videre i workshopen.  
+Du må som oftest bruke navnet på boten din for å kunne kjøre de forskjellige kommandoene, uten vil du ikke få noe svar. Det finnes også unntak som `ship it`-teksten som trigger en kommando uansett. Vi skal se mer på disse forskjellene videre i workshopen. 
+
+## Del 4: Kjør hubot mot slack
+Det er fult muligt å kjøre opp hubot mot slack også lokalt. Slik at du kan teste om alt funker som du vil før du eventuelt deployer hubot til en server:
+- I Slack-appen, gå til [```BEKK``` > ```App & integrations```](https://bekk.slack.com/apps).
+- Søk etter [```Hubot```](https://bekk.slack.com/apps/A0F7XDU93-hubot)
+- Klikk ```Add configuration``` for å legge til din egen hubot integrasjon.
+- Eksporter slack tokenet ditt i terminalen. Du skal se det når du har lagt inn hubot integrasjonen din. Kommandoen skal se slik ut: 
+  
+  ```sh
+  export HUBOT_SLACK_TOKEN=xoxb-95557811333-0jwofbjdGDGPPgEQiqmeFHDw
+  ```
+- Start opp hubot med følgende for å få den til å koble seg til bekk slack-en:
+  
+  ```sh 
+  bin/hubot -a slack
+  ```
+- Test den ut ved å snakke med den direkte som en bruker, eller inviterer den til diverse channels du er med i for å se hvordan den funker der. 
