@@ -16,6 +16,8 @@ For å bruke et av disse sciptene gjør følgende:
 - Legg til pakkenavnet i `external-scripts.json`.
 - Kjør `npm home <package-name>` for å åpne hjemmsiden for pakken. Her kan du se mer info om pakken og hvilken konfigurasjon som skal til for å bruke den rett. 
 
+En morro en du kan prøve å legge til er `hubot-thesimpsons`.
+
 Det er selfølgelig ingenting som stopper deg fra å finne scripts på andre måter (Google er din beste venn) for så legge disse direkte i `/scripts` mappen. 
 
 ## Ekstra: Deploy Hubot
