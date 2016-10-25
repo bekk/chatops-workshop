@@ -1,26 +1,34 @@
 # Oppgave 3
 
-Ruter-integrasjon med persistes
+Et selvkonfigurerende bussorakel
 
 ## Del 1 - installer redis
 
-127.0.0.1:6379
+For lokal utvikling kjør `brew install redis` for å installerer. Start databasen med `brew services start redis` og den vil kjøre opp på `127.0.0.1:6379`. Du kan teste kjøringen med `redis-cli ping` og `redis-cli --help`
 
-`external-scripts.json` her ligger allerede `hubot-redis-brain`
+TODO: Hva skal gjøres remote?
 
-`redis-cli ping` og `redis-cli --help`
+Redis er defaultvalget til hubot og i `external-scripts.json` ligger allerede `hubot-redis-brain`. 
 
-## Del 2 - koble sammen
+Sjekk ut [kildekoden til hubot-redis-brain](https://github.com/hubot-scripts/hubot-redis-brain/blob/master/src/redis-brain.coffee). Her ser vi at den defaulter til lokal database om et set properties mangler.
 
-Lagre et stop og hent ut igjen
+Start boten på nytt og se at noe tilsvarende logges under oppstart
+```
+INFO hubot-redis-brain: Using default redis on localhost:6379
+INFO hubot-redis-brain: Data for hubot brain retrieved from Redis
+```
+
+## Del 2 - lagring og uthenting
+
+Vi skal integrere mot [ruter](http://reisapi.ruter.no/Help/Api/GET-Favourites-GetFavourites_favouritesRequest), men vi ønsker å ikke å sende inn informasjonen `Stopid1-lineid1-destinationtext1` på hver gang. Vi skal altså lagre `Stopid1-lineid1-destinationtext1` som et alias som vi deretter kan bruke mot ruters API.
+
+
 
 ## Del 3 - http!
 
 Sjekk om navn er lagret eller gi en feilmelding
 
 Hent ut data fra:
-
-http://reisapi.ruter.no/Help/Api/GET-Favourites-GetFavourites_favouritesRequest
 
 Dependencies og moment
 På MonitoredStopVisits:
