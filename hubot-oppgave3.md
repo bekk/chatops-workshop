@@ -33,18 +33,24 @@ Sjekk ut `Persistence` i [script-dokumentasjonen](https://github.com/github/hubo
 
 ## Del 3 - reelle kall!
 
-Sjekk om navn er lagret eller gi en feilmelding
+Vi skal komplettere bussorakelet med reell data fra Ruter og slik at kommandoene blir som følger
 
-Hent ut data fra:
+```
+// Commands:
+//   hubot ruter neste <alias> - vis neste avganger for aliset
 
-Dependencies og moment
-På MonitoredStopVisits:
-hver avgang:
-MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime
+tine>  hubot ruter ny hjem 3010625 18 Rikshospitalet
+hubot> @tine: Nytt stopp hjem er lagret
+tine>  hubot ruter neste hjem
+hubot> @tine: Neste fra 3010625 på linje 18 mot Rikshospitalet er om 11, 26, 41 og 56 minutter
+```
 
-Kan gjøres om til moment moment(envariabel)
+I [Ruters Api](http://reisapi.ruter.no/Help/Api/GET-Favourites-GetFavourites_favouritesRequest) gjøres kall med følgede GET `http://reisapi.ruter.no/Favourites/GetFavourites?favouritesRequest=Stopid1-lineid1-destinationtext1`
 
-Kan diffes mot `now`: avgang.diff(moment(), 'minutes') 
+Tips: 
+* Som avgangstid har vi benyttet `MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime` på elementene i  `MonitoredStopVisits` 
+* For å enklere behandle tid kan npm-modulen `moment` taes i bruk. Se dokumentasjon på [momentjs](momentjs.com) 
+* Moment har funksjoner for å gjøre om strings til tidspunkter og for å finne tidsforskjellen mellom nå og to tidspunkter.
 
 ## Ekstraoppgave:
 Trekk ut stoppestedid til en egen persisteringskommando slik at man kan bruke navn på stoppested i kommandoen fra del 2.
