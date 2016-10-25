@@ -22,9 +22,16 @@ INFO hubot-redis-brain: Data for hubot brain retrieved from Redis
 
 Vi skal integrere mot [ruter](http://reisapi.ruter.no/Help/Api/GET-Favourites-GetFavourites_favouritesRequest), men vi ønsker å ikke å sende inn informasjonen `Stopid1-lineid1-destinationtext1` på hver gang. Vi skal altså lagre `Stopid1-lineid1-destinationtext1` som et alias som vi deretter kan bruke mot ruters API.
 
+I denne delen skal vi lage lagring og uthentingskommandoene som følger
+```
+// Commands:
+//   hubot ruter ny <alias> <stoppestedid> <linjenummer> <destinasjon> - legg til et alias for ruten på et enkelt stopp
+//   hubot ruter vis <alias> - vis info om aliaset
+```
 
+Sjekk ut `Persistence` i [script-dokumentasjonen](https://github.com/github/hubot/blob/master/docs/scripting.md)
 
-## Del 3 - http!
+## Del 3 - reelle kall!
 
 Sjekk om navn er lagret eller gi en feilmelding
 
@@ -38,4 +45,9 @@ MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime
 Kan gjøres om til moment moment(envariabel)
 
 Kan diffes mot `now`: avgang.diff(moment(), 'minutes') 
+
+## Ekstraoppgave:
+Trekk ut stoppestedid til en egen persisteringskommando slik at man kan bruke navn på stoppested i kommandoen fra del 2.
+
+
 
