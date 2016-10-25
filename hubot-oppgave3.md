@@ -6,7 +6,10 @@ Et selvkonfigurerende bussorakel
 
 For lokal utvikling kjør `brew install redis` for å installerer. Start databasen med `brew services start redis` og den vil kjøre opp på `127.0.0.1:6379`. Du kan teste kjøringen med `redis-cli ping` og `redis-cli --help`
 
-TODO: Hva skal gjøres remote?
+Hvis du kjører redis remote (eks når du har deployet hubot) så kan overstyre default linken ved å sette `REDIS_URL`. Eks: 
+```
+export REDIS_URL=redis://passwd@192.168.0.1:16379/prefix
+```
 
 Redis er defaultvalget til hubot og i `external-scripts.json` ligger allerede `hubot-redis-brain`. 
 
