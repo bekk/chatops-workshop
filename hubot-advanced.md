@@ -1,7 +1,7 @@
 # Avansert bruk
 
 ## Finne ferdig lagde scripts 
-Å lage egene scripts er både gøy og nyttig, men det kan fort ta for lang tid hvis vi ønsker å lage alle script-ene selv. Hubot sin størte fordel er mengden scripts som allerde laget og vedlikeholdt av samfunnet rundt Hubot. Den enkleste måten å finne dem på er gjennom [NPM registeret](https://www.npmjs.com/browse/keyword/hubot-scripts) ved å bruke søkestringen `hubot-scripts <your-search-term>`. Eks:
+Å lage egene scripts er både gøy og nyttig, men det kan fort ta for lang tid hvis vi ønsker å lage alle script-ene selv. Hubot sin største fordel er mengden scripts som allerde laget og vedlikeholdt av samfunnet rundt Hubot. Den enkleste måten å finne dem på er gjennom [NPM registeret](https://www.npmjs.com/browse/keyword/hubot-scripts) ved å bruke søkestringen `hubot-scripts <your-search-term>`. Eks:
 ```
 npm search hubot-scripts github
 NAME                  DESCRIPTION
