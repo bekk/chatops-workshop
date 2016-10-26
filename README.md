@@ -16,3 +16,5 @@ Presentasjon på [bekk.github.io/chatops-workshop](https://bekk.github.io/chatop
   - [Avansert bruk](https://github.com/bekk/chatops-workshop/blob/master/hubot-advanced.md)
 
 
+## Ekstra: Deploy Hubot
+Når du endelig vil deploye Hubot-en din til en server for en mer permanent løsning så kan du lese de forskjellige metodene [her](https://hubot.github.com/docs/#deploying). Vi anbefaler å bruke Heroku, som er den offesielle metoden.
