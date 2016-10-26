@@ -15,6 +15,8 @@ Presentasjon på [bekk.github.io/chatops-workshop](https://bekk.github.io/chatop
   - [Oppgave 3:](https://github.com/bekk/chatops-workshop/blob/master/hubot-oppgave2.md) Lag en bot-drevet url-shortener.
   - [Oppgave 4:](https://github.com/bekk/chatops-workshop/blob/master/hubot-oppgave3.md) Et selvkonfigurerende bussorakel.
 
+Du er nå ferdig med hovedoppgavene til workshoppen. Du kan nå slå deg løs med å lage andre kule Hubot scripts som du tenker er kule eller nyttige for deg og dit prosjekt. Hvis du ikke kommer på noe selv, så må du gjerne se i ekstra oppgavene under for andre artige oppgaver du kan jobbe med.
+
 ### Ekstra Oppgaver:
   - Kommer mer 
 
