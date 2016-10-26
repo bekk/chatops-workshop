@@ -15,8 +15,8 @@ Presentasjon på [bekk.github.io/chatops-workshop](https://bekk.github.io/chatop
   - [Oppgave 3:](https://github.com/bekk/chatops-workshop/blob/master/hubot-oppgave2.md) Lag en bot-drevet url-shortener.
   - [Oppgave 4:](https://github.com/bekk/chatops-workshop/blob/master/hubot-oppgave3.md) Et selvkonfigurerende bussorakel.
 
-## Ekstra Oppgaver:
+### Ekstra Oppgaver:
   - Kommer mer 
 
-## Ekstra: Deploy Hubot
+### Ekstra: Deploy Hubot
 Når du endelig vil deploye Hubot-en din til en server for en mer permanent løsning så kan du lese de forskjellige metodene [her](https://hubot.github.com/docs/#deploying). Vi anbefaler å bruke Heroku, som er den offesielle metoden.
