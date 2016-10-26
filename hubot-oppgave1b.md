@@ -19,6 +19,3 @@ For å bruke et av disse sciptene gjør følgende:
 En morro en du kan prøve å legge til er `hubot-thesimpsons`.
 
 Det er selfølgelig ingenting som stopper deg fra å finne scripts på andre måter (Google er din beste venn) for så legge disse direkte i `/scripts` mappen. 
-
-## Ekstra: Deploy Hubot
-Når du endelig vil deploye Hubot-en din til en server for en mer permanent løsning så kan du lese de forskjellige metodene [her](https://hubot.github.com/docs/#deploying). Vi anbefaler å bruke Heroku, som er den offesielle metoden.
