@@ -8,7 +8,7 @@ Sjekk ut mappen `scripts` og opprett en `hello.coffee` eller `hello.js`.
 
 Vi vil lage et script som kan kalles slik `hubot hello` hvor boten svarer `Dittnavn: Hola!` tilbake
 
-Sjekk ut [script-dokumentasjonen](https://github.com/github/hubot/blob/master/docs/scripting.md) for å sjekke ut oppsettet av et script.
+I [script-dokumentasjonen](https://github.com/github/hubot/blob/master/docs/scripting.md) kan du lese mer om oppsettet av et script.
 
 Test ut at du får svar på formatene 
 
@@ -42,5 +42,5 @@ Sjekk ut avsnittet `Documenting Scripts` i [script-dokumentasjonen](https://gith
 
 ## Del 4 - random
 
-For å gi huboten din litt personlighet og gjøre den litt mindre statisk. Prøv for eksempel å ta i bruk `res.random` til å gi tilfeldig responser på `hubot hello`
+For å gi huboten din litt personlighet og gjøre den litt mindre statisk, prøv å ta i bruk `res.random` til å gi tilfeldig responser på `hubot hello`
 
