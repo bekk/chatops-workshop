@@ -11,12 +11,14 @@ Vi vil lage et script som kan kalles slik `hubot hello` hvor boten svarer `Dittn
 Sjekk ut [script-dokumentasjonen](https://github.com/github/hubot/blob/master/docs/scripting.md) for å sjekke ut oppsettet av et script.
 
 Test ut at du får svar på formatene 
-hubot hello
-hubot: hello
-@hubot hello
+
+- hubot hello
+- hubot: hello
+- @hubot hello
 
 og ikke på formatet 
-hello
+
+- hello
 
 og at navnet ditt er en del av svaret. Ved lokal utvikling er navnet ditt `Shell`
 
@@ -25,8 +27,9 @@ og at navnet ditt er en del av svaret. Ved lokal utvikling er navnet ditt `Shell
 Opprett en ny fil `anyone.js|coffee`. Her vil vi ha et script som fanger opp dersom noen skriver `anyone`. Hubot skal svare med `Pick me! Pick me!` 
 
 Test ut at du får svar på formatene 
-anyone there?
-is anyone up for a drink?
+
+- anyone there?
+- is anyone up for a drink?
 
 og at navnet ditt ikke er en del av bot-svaret
 
