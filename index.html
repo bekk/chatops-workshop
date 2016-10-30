@@ -146,6 +146,44 @@
 					<aside class="notes">Problem: Utviklere får ikke høre direkte feedback fra brukere. Blir liggende "i systemet" og omformulert på veien til oss. </aside>
 				</section>
 				<section>
+					<h3>#random</h3>
+					<img src="./img/middag.png"/>
+					<aside class="notes">
+						<ul>
+							<li>Konkurranse</li>
+							<li>Pure fun</li>
+						</ul>
+                    </aside>
+				</section>
+				<section>
+					<h3>#github</h3>
+					<img src="./img/alex_github.png"/>
+				</section>
+				<section>
+					<h3>#jenkins</h3>
+					<img src="./img/alex_jenkins.png"/>
+				</section>
+				<section>
+					<h3>#jenkins</h3>
+					<img src="./img/alex_humor.png"/>
+				</section>
+				<section>
+					<h3>#jenkins</h3>
+					<img src="./img/alex_humor2.png"/>
+				</section>
+				<section>
+					<h3>#production_deploy</h3>
+					<img src="./img/alex_deploy.png"/>
+				</section>
+				<section>
+					<h3>Stats</h3>
+					<img src="./img/alex_stats.png"/>
+				</section>
+				<section>
+					<h3>Health</h3>
+					<img src="./img/alex_health.png"/>
+				</section>
+				<section>
 					<h2>Tools of the trade</h2>
 					<table>
 						<thead>
@@ -290,21 +328,95 @@
 
 				</section>
 				<section>
+					Custom Slack-integrasjoner
+				</section>
+				<section>
+					<!--Hva er Hubot?-->
 					<h1>Hubot</h1>
+					<img src="./img/hubot.jpg" />
+					<aside class="notes">
+						<li>Chat bot laget av github</li>
+						<li>Skrevet i Coffescript og Node.js</li>
+						<li>Enkel å konfigure</li>
+						<li>Enkel å deploye. Ferdig oppsett til heroku</li>
+						<li>Enkel å integrere med chats (Adaptere)</li>
+						<li>Enkel å lage scripts til</li>
+						<li>Eller finne ferdige scripts på nett</li>
+					</aside>
+				</section>
+				<section data-markdown>
+					## Installere Hubot
+
+					```sh
+					// install the yo hubot generator
+					$ npm install -g yo generator-hubot
+
+					// genereate hubot
+					$ yo hubot
+
+					// run hubot with
+					$ bin/hubot
+					```
+				</section>
+				<section>
+					<img src="./img/folder.png" />
+				</section>
+				<section>
+					<h2>Lage et script</h2>
 					<ul>
-						<li class="fragment">Appregister</li>
-						<li class="fragment">Slippe å tenke på det rundt</li>
-						<li class="fragment">Adaptere mot ulike chatklienter</li>
-					</ul>
+					 <li>Leve i hubots script load path</li>
+					 <li>Være en .js eller .coffee fil</li>
+					 <li>Eksportere en funksjon</li>
+				 </ul>
+
+					<section data-markdown>
+						```js
+						module.exports = function (robot) {
+							// your code here
+						}
+						```
+					</section>
+				</section>
+				<section data-markdown>
+					```js
+					// Description:
+					//   Beskrivelse av scriptet ditt som vises i help
+					//
+					// Commands:
+					//   hubot cmd - hvilken cmd dette scriptet legger til
+
+
+					module.exports = function (robot) {
+						robot.respond(regex , function(res){
+							// Do something with res (Response object)
+						})
+					}
+					```
+				</section>
+
+				<section data-markdown>
+					```js
+					// Description:
+					//   Et enkelt testscript for enkel respond-funksjonalitet
+					//
+					// Commands:
+					//   hubot hello - boten hilser tilbake
+
+
+					module.exports = function (robot) {
+						robot.respond(/hello/ ,function(res){
+							var welcomes = ["Hola!", "Hei!"]
+							res.reply(res.random(welcomes));
+						})
+					}
+					```
 				</section>
 				<section>
 					<h1>Workshop</h1>
+					<a href="https://github.com/bekk/chatops-workshop">github.com/bekk/chatops-workshop</a>
 				</section>
 				<section>
-					<h1>Oppsummering</h1>
-				</section>
-				<section>
-					<h1>Spørsmål?</h1>
+					<h1>Til slutt</h1>
 				</section>
 			</div>
 		</div>
