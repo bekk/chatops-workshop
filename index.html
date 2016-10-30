@@ -279,23 +279,93 @@
 					Custom Slack-integrasjoner
 				</section>
 				<section>
-					Hva er Hubot?
+					<section>
+						<!--Hva er Hubot?-->
+						<h2>Hubot</h2>
+						<img src="./img/hubot.jpg" />
+						<aside class="notes">
+							<li>Chat bot laget av github</li>
+							<li>Skrevet i Coffescript og Node.js</li>
+							<li>Enkel å konfigure</li>
+							<li>Enkel å deploye. Ferdig oppsett til heroku</li>
+							<li>Enkel å integrere med chats (Adaptere)</li>
+							<li>Enkel å lage scripts til</li>
+							<li>Eller finne ferdige scripts på nett</li>
+						</aside>
+					</section>
 				</section>
-				<section>
-					Installere Hubot
-				</section>
-				<section>
-					Andres pakker med Hubot
-				</section>
-				<section>
-					Hubot + Enkel HTTP-tjeneste
-				</section>
-				<section>
-					<h2>Oppsummering</h2>
+				<section data-markdown>
+					## Installere Hubot
 
+					```sh
+					// install the yo hubot generator
+					$ npm install -g yo generator-hubot
+
+					// genereate hubot
+					$ yo hubot
+
+					// run hubot with
+					$ bin/hubot
+					```
+				</section>
+				<section>
+					<img src="./img/folder.png" />
+				</section>
+				<section>
+					<h2>Lage et script</h2>
+					<ul>
+					 <li>Leve i hubots script load path</li>
+					 <li>Være en .js eller .coffee fil</li>
+					 <li>Eksportere en funksjon</li>
+				 </ul>
+
+					<section data-markdown>
+						```js
+						module.exports = function (robot) {
+							// your code here
+						}
+						```
+					</section>
+				</section>
+				<section data-markdown>
+					```js
+					// Description:
+					//   Beskrivelse av scriptet ditt som vises i help
+					//
+					// Commands:
+					//   hubot cmd - hvilken cmd dette scriptet legger til
+
+
+					module.exports = function (robot) {
+						robot.respond(regex , function(res){
+							// Do something with res (Response object)
+						})
+					}
+					```
+				</section>
+
+				<section data-markdown>
+					```js
+					// Description:
+					//   Et enkelt testscript for enkel respond-funksjonalitet
+					//
+					// Commands:
+					//   hubot hello - boten hilser tilbake
+
+
+					module.exports = function (robot) {
+						robot.respond(/hello/ ,function(res){
+							var welcomes = ["Hola!", "Hei!"]
+							res.reply(res.random(welcomes));
+						})
+					}
+					```
 				</section>
 				<section>
 					Spørsmål?
+				</section>
+				<section>
+					https://github.com/bekk/chatops-workshop
 				</section>
 			</div>
 		</div>
