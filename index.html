@@ -32,12 +32,12 @@
 					<p class="note">En chatops-workshop av Alexander, Tine og Tomas</p>
 				</section>
 				<section>
-					<h3>Vi skal få en chatops-intro</h3>
+					<h2>Agenda: En chatops-intro</h2>
 					<ol>
 						<li class="fragment">Chatops: Hva er det (godt for)?</li>
 						<li class="fragment">Slack: Utforske features</li>
 						<li class="fragment">Hubot: Hva kan vi bruke det til?</li>
-						<li class="fragment">Workshop: Lage en bot</li>
+						<li class="fragment">Workshop: Få det i fingra</li>
 					</ol>
 					<aside class="notes">
 						Agenda for dagen
@@ -50,7 +50,7 @@
                     </aside>
 				</section>
 				<section>
-					<h2>Chatops</h2>
+					<h1>Chatops</h1>
 					<ul>
 						<li class="fragment">Term fra Github</li>
 						<li class="fragment">Dialog</li>
@@ -68,7 +68,7 @@
                     </aside>
 				</section>
 				<section>
-					<h3>Fordeler</h3>
+					<h2>Fordeler</h2>
 					<ul>
 						<li class="fragment">Synlighet</li>
 						<li class="fragment">Selvforsterkende dokumentasjon</li>
@@ -98,7 +98,7 @@
                     </aside>
 				</section>
 				<section>
-					<h2>#sukker-deploy</h2>
+					<h3>#sukker-deploy</h3>
 					<img src="./img/deploy-ident.png"/>
 					<aside class="notes">
 						<ul>
@@ -108,7 +108,7 @@
                     </aside>
 				</section>
 				<section>
-					<h2>#sukker</h2>
+					<h3>#sukker</h3>
 					<img src="./img/plogg.png"/>
 					<aside class="notes">
 						<ul>
@@ -117,7 +117,7 @@
                     </aside>
 				</section>
 				<section>
-					<h2>#random</h2>
+					<h3>#random</h3>
 					<img src="./img/middag.png"/>
 					<aside class="notes">
 						<ul>
@@ -146,7 +146,7 @@
 					<aside class="notes">Problem: Utviklere får ikke høre direkte feedback fra brukere. Blir liggende "i systemet" og omformulert på veien til oss. </aside>
 				</section>
 				<section>
-					<h3>Tools of the trade</h3>
+					<h2>Tools of the trade</h2>
 					<table>
 						<thead>
 							<tr>
@@ -188,16 +188,51 @@
                     </aside>
 				</section>
 				<section>
-					<h2>Integrasjoner</h2>
-					<ul>
-						<li>Ferdige integrasjoner</li>
-						<li>URL-integrasjoner</li>
-						<li>Custom integrasjoner</li>
-						<li>Post til deg, kanal eller </li>
-					</ul>
+					<h1>Slack</h1>
 				</section>
 				<section>
-					<h2>Ferdige integrasjoner finnes for mange verktøy</h2>
+					<h2>Om</h2>
+				</section>
+				<section>
+					<h2>Integrasjoner</h2>
+					<ul>
+						<li class="fragment">Slash Commands</li>
+						<li class="fragment">Webhooks</li>
+						<li class="fragment">Bots</li>
+						<li class="fragment">Apps</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Slash commands: /remind, /topic</li>
+							<li>Webhooks: Sender informasjon ut eller inn fra Slack</li>
+							<li>Bots: personifisering av slash og hooks</li>
+							<li>Apps: Et ferdig sett med * of the above </li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h3>Slash commands</h3>
+					<ul>
+						<li>Team wide accessable</li>
+						<li>Svarer til deg eller kanal</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Reminder: Kan vise f.eks. påminnelser for standup eller låse timer</li>
+							<li>Feed: En RSS-feed i kanalen!</li>
+							<li>Team wide</li>
+							<li>Kan svare til deg eller til kanal du er i</li>
+						</ul>
+                    </aside>
+				</section>
+				<section>
+					<h3>Webhooks: Send informasjon inn eller ut av en kanal</h3>
+				</section>
+				<section>
+					<h3>Bots: Knytter webhooks og slash commands opp mot en "bruker"</h3>
+				</section>
+				<section>
+					<h3>Apps: En ferdig pakke med slash commands og hooks</h3>
 					<ul>
 						<li class="fragment">Github (Bitbucket)</li>
 						<li class="fragment">Jenkins (TravisCI, CircleCI)</li>
@@ -206,46 +241,33 @@
 					</ul>
 
 					<p class="note fragment"><a href="https://bekk.slack.com/apps">bekk.slack.com/apps</a></p>
-
-				</section>
-				<section>
-					<h2>Men ofte lite customizable</h2>
-					<img src="./img/heroku.png" />
-					<ul>
-						<li class="fragment">Heroku har -ingen- konfigurasjon</li>
-						<li class="fragment">JIRA-integrasjons fungerer ikke nødvendigvis</li>
-						<li class="fragment">TODO: mer?</li>
-						<li class="fragment">Kan kreve tilganger/endringer man ikke får</li>
-					</ul>
 					<aside class="notes">
+						Ofte lite customizable
 						<ul>
-							<li>Heroku viser kun beskjed ved deploy</li>
-							<li>JIRA-integrasjon avhenger av versjon og konfigurasjon</li>
+							<li class="fragment">Heroku har -ingen- konfigurasjon. Gir kun beskjed ved deploy</li>
+							<li class="fragment">JIRA-integrasjons fungerer ikke nødvendigvis</li>
+							<li class="fragment">TODO: mer?</li>
+							<li class="fragment">Kan kreve tilganger/endringer man ikke får</li>
 						</ul>
-                    </aside>
-				</section>
-
-				<section>
-					Custom Slack-integrasjoner
-				</section>
-				<section>
-					Hva er Hubot?
-				</section>
-				<section>
-					Installere Hubot
-				</section>
-				<section>
-					Andres pakker med Hubot
-				</section>
-				<section>
-					Hubot + Enkel HTTP-tjeneste
-				</section>
-				<section>
-					<h2>Oppsummering</h2>
+					</aside>
 
 				</section>
 				<section>
-					Spørsmål?
+					<h1>Hubot</h1>
+					<ul>
+						<li class="fragment">Appregister</li>
+						<li class="fragment">Slippe å tenke på det rundt</li>
+						<li class="fragment">Adaptere mot ulike chatklienter</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Workshop</h1>
+				</section>
+				<section>
+					<h1>Oppsummering</h1>
+				</section>
+				<section>
+					<h1>Spørsmål?</h1>
 				</section>
 			</div>
 		</div>
