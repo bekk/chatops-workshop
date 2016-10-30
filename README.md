@@ -17,8 +17,10 @@ Presentasjon på [bekk.github.io/chatops-workshop](https://bekk.github.io/chatop
 
 Du er nå ferdig med hovedoppgavene til workshoppen. Du kan nå slå deg løs med å lage andre kule Hubot scripts som du tenker er kule eller nyttige for deg og dit prosjekt. Hvis du ikke kommer på noe selv, så må du gjerne se i ekstra oppgavene under for andre artige oppgaver du kan jobbe med.
 
-### Ekstra Oppgaver:
-  - Kommer mer 
+### Ekstraoppgaver:
+  - Ta i bruk `Custom listeners` fra [dokumentasjonen](https://hubot.github.com/docs/scripting/) ved en av oppgavene under
+    - Svare på hver n-te melding for en bestemt bruker med en morsom kommentar
+    - Lag en kommando for å lagre bursdagen til en bruker. For alle meldinger, sjekk deretter om personen har bursdag og send en gratulasjon det er den store dagen i dag! 
 
 ### Ekstra: Deploy Hubot
 Når du endelig vil deploye Hubot-en din til en server for en mer permanent løsning så kan du lese de forskjellige metodene [her](https://hubot.github.com/docs/#deploying). Vi anbefaler å bruke Heroku, som er den offesielle metoden.
