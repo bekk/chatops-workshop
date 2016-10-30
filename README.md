@@ -21,7 +21,7 @@ Du er nå ferdig med hovedoppgavene til workshoppen. Du kan nå slå deg løs me
   - Ta i bruk `Custom listeners` fra [dokumentasjonen](https://hubot.github.com/docs/scripting/) ved en av oppgavene under
     - Svare på hver n-te melding for en bestemt bruker med en morsom kommentar
     - Lag en kommando for å lagre bursdagen til en bruker. For alle meldinger, sjekk deretter om personen har bursdag og send en gratulasjon det er den store dagen i dag! 
-  - [Adventkalender:](https://github.com/bekk/chatops-workshop/blob/master/adventskalender.md) Lag en bot-drevet adventkalender trekning
+  - [Adventkalender:](https://github.com/bekk/chatops-workshop/blob/master/adventkalender.md) Lag en bot-drevet adventkalender trekning
 
 ### Ekstra: Deploy Hubot
 Når du endelig vil deploye Hubot-en din til en server for en mer permanent løsning så kan du lese de forskjellige metodene [her](https://hubot.github.com/docs/#deploying). Vi anbefaler å bruke Heroku, som er den offesielle metoden.
