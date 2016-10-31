@@ -320,10 +320,12 @@
 				<section>
 					<!--Hva er Hubot?-->
 					<h1>Hubot</h1>
-					<img src="./img/hubot.jpg" />
-					<aside class="notes">
-						<li>Chat bot laget av github</li>
+					<ul>
+						<li>Chatbot laget av github</li>
 						<li>Skrevet i Coffescript og Node.js</li>
+						<li>Første og største av sin type</li>
+					</ul>
+					<aside class="notes">
 						<li>Enkel å konfigure</li>
 						<li>Enkel å deploye. Ferdig oppsett til heroku</li>
 						<li>Enkel å integrere med chats (Adaptere)</li>
@@ -331,31 +333,18 @@
 						<li>Eller finne ferdige scripts på nett</li>
 					</aside>
 				</section>
-				<section data-markdown>
-					## Installere Hubot
-
-					```sh
-					// install the yo hubot generator
-					$ npm install -g yo generator-hubot
-
-					// genereate hubot
-					$ yo hubot
-
-					// run hubot with
-					$ bin/hubot
-					```
-				</section>
 				<section>
-					<img src="./img/folder.png" />
+					<!--Architecture-->
+					<h2>Arkitektur</h2>
+					<img src="./img/hubot.png"/>
 				</section>
 				<section>
 					<h2>Lage et script</h2>
-					<ul>
+					<aside class="notes">
 					 <li>Leve i hubots script load path</li>
 					 <li>Være en .js eller .coffee fil</li>
 					 <li>Eksportere en funksjon</li>
-				 </ul>
-
+				 </aside>
 					<code data-markdown>
 						```js
 						module.exports = function (robot) {
@@ -401,6 +390,11 @@
 				<section>
 					<h1>Workshop</h1>
 					<a href="https://github.com/bekk/chatops-workshop">github.com/bekk/chatops-workshop</a>
+					<aside class="notes">
+						<li>Skal ta dere igjennom oppsett, installasjon etc for å starte med chatops i Slack og hubot</li>
+						<li>Dere vil få en inføring i hvordan sette opp deres egen hubot</li>
+						<li>Både lokalt og eksternt om dere ønsker det</li>
+					</aside>
 				</section>
 				<section>
 					<h1>Til slutt</h1>
