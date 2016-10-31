@@ -1,6 +1,4 @@
-# Oppgave 1 
-
-Noen grunnsteiner i hubotscripting :)
+# Enter hubot
 
 ## Del 1 - reply
 
