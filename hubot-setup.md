@@ -85,3 +85,6 @@ Det er fult muligt å kjøre opp hubot mot slack også lokalt. Slik at du kan te
   bin/hubot -a slack
   ```
 - Test den ut ved å snakke med den direkte som en bruker, eller inviterer den til diverse channels du er med i for å se hvordan den funker der. 
+
+## Hvis du vil: Deploy Hubot
+Når du endelig vil deploye Hubot-en din til en server for en mer permanent løsning så kan du lese de forskjellige metodene [her](https://hubot.github.com/docs/#deploying). Vi anbefaler å bruke Heroku, som er den offesielle metoden.
