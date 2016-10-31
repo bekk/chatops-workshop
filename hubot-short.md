@@ -1,6 +1,4 @@
-# Oppgave 2
-
-En bot-drevet url-shortener
+# En bot-drevet url-shortener 
 
 ## Del 1 - input
 
