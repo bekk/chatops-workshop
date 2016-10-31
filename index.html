@@ -52,7 +52,7 @@
                     </aside>
 				</section>
 				<section>
-					<h2>Chatops</h2>
+					<h1>Chatops</h1>
 					<ul>
 						<li class="fragment">Term fra Github</li>
 						<li class="fragment">Dialog</li>
@@ -69,7 +69,7 @@
                     </aside>
 				</section>
 				<section>
-					<h3>Fordeler</h3>
+					<h2>Fordeler</h2>
 					<ul>
 						<li class="fragment">Synlighet</li>
 						<li class="fragment">Selvforsterkende dokumentasjon</li>
@@ -84,7 +84,10 @@
                     </aside>
 				</section>
 				<section>
-					<h2>#sukker-deploy</h2>
+					<h2>Eksempler</<h2>
+				</section>
+				<section>
+					<h3>#sukker-deploy</h3>
 					<img src="./img/navbot-deploy.png"/>
 					<aside class="notes">
 						<ul>
@@ -96,7 +99,7 @@
                     </aside>
 				</section>
 				<section>
-					<h2>#sukker-deploy</h2>
+					<h3>#sukker-deploy</h3>
 					<img src="./img/deploy-ident.png"/>
 					<aside class="notes">
 						<ul>
@@ -106,7 +109,7 @@
                     </aside>
 				</section>
 				<section>
-					<h2>#sukker</h2>
+					<h3>#sukker</h3>
 					<img src="./img/plogg.png"/>
 					<aside class="notes">
 						<ul>
@@ -115,7 +118,36 @@
                     </aside>
 				</section>
 				<section>
-					<h2>#random</h2>
+					<h3>#random</h3>
+					<img src="./img/middag.png"/>
+					<aside class="notes">
+						<ul>
+							<li>Konkurranse</li>
+							<li>Pure fun</li>
+						</ul>
+                    </aside>
+                </section>
+                <section>
+					<h3>For PR og kodeendringer</h3>
+					<img src="./img/jira_merge.png" />
+					<aside class="notes">
+						Problem: PR blir liggende lenge.
+					</aside>
+				</section>
+				<section>
+					<h3>For systemfeil og metrikker</h3>
+					<img src="./img/aws_logs.png" />
+					<aside class="notes">
+						Problem: Error logs er overfylte og ignorerte.
+					</aside>
+				</section>
+				<section>
+					<h3>For brukerfeedback</h3>
+					<img src="./img/fdesk.png" />
+					<aside class="notes">Problem: Utviklere får ikke høre direkte feedback fra brukere. Blir liggende "i systemet" og omformulert på veien til oss. </aside>
+				</section>
+				<section>
+					<h3>#random</h3>
 					<img src="./img/middag.png"/>
 					<aside class="notes">
 						<ul>
@@ -125,35 +157,35 @@
                     </aside>
 				</section>
 				<section>
-					<h2>#github</h2>
+					<h3>#github</h3>
 					<img src="./img/alex_github.png"/>
 				</section>
 				<section>
-					<h2>#jenkins</h2>
+					<h3>#jenkins</h3>
 					<img src="./img/alex_jenkins.png"/>
 				</section>
 				<section>
-					<h2>#jenkins</h2>
+					<h3>#jenkins</h3>
 					<img src="./img/alex_humor.png"/>
 				</section>
 				<section>
-					<h2>#jenkins</h2>
+					<h3>#jenkins</h3>
 					<img src="./img/alex_humor2.png"/>
 				</section>
 				<section>
-					<h2>#production_deploy</h2>
+					<h3>#production_deploy</h3>
 					<img src="./img/alex_deploy.png"/>
 				</section>
 				<section>
-					<h2>Stats</h2>
+					<h3>Stats</h3>
 					<img src="./img/alex_stats.png"/>
 				</section>
 				<section>
-					<h2>Health</h2>
+					<h3>Health</h3>
 					<img src="./img/alex_health.png"/>
 				</section>
 				<section>
-					<h3>Tools of the trade</h3>
+					<h2>Tools of the trade</h2>
 					<table>
 						<thead>
 							<tr>
@@ -195,16 +227,87 @@
                     </aside>
 				</section>
 				<section>
-					<h2>Integrasjoner</h2>
+					<h1>Slack</h1>
 					<ul>
-						<li>Ferdige integrasjoner</li>
-						<li>URL-integrasjoner</li>
-						<li>Custom integrasjoner</li>
-						<li>Post til deg, kanal eller </li>
+						<li class="fragment">IRC</li>
+						<li class="fragment">+ Enklere integrering</li>
+						<li class="fragment">+ App/bot repository</li>
+						<li class="fragment">+ Mobil/Desktop apps</li>
+						<li class="fragment">+ Småfeatures</li>
+						<li class="fragment">4 * 10<sup>9</sup> $</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>"Searchable Log of All Conversation and Knowledge"</li>
+							<li>IRC-like: Chatrooms, pm, channels</li>
+							<li>Kobler API endepunkt mot kanaler o.l.</li>
+							<li>App repository for Slack</li>
+							<li>Apps: Enklere bruk</li>
+							<li>Småfeatures: Emoji reactions</li>
+							<li>3. august 2013, 1mrd i okt 14, 2,8 i mar 15</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>Integrasjoner</h2>
+					<ul class="fragment">
+						<li>Slash Commands</li>
+						<li>Webhooks</li>
+						<li>Bots</li>
+						<li>Apps</li>
 					</ul>
 				</section>
 				<section>
-					<h2>Ferdige integrasjoner finnes for mange verktøy</h2>
+					<h3>Slash commands</h3>
+					<ul>
+						<li class="fragment">Team wide accessable</li>
+						<li class="fragment">Svarer til deg eller kanal</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Team wide: Eksisterer overalt</li>
+							<li>Kan svare til deg eller til kanal du er i</li>
+							<li>Reminder: Kan vise f.eks. påminnelser for standup eller låse timer</li>
+							<li>Feed: En RSS-feed i kanalen!</li>
+						</ul>
+                    </aside>
+				</section>
+				<section>
+					<h3>Webhooks</h3>
+					<ul>
+						<li class="fragment">To typer</li>
+						<li class="fragment">Kanal-spesifikke</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Incoming: By default én bestemt kanal, men kan overstyres</li>
+							<li>Incoming: Krever ikke endepunkt</li>
+							<li>Outgoing: ENTEN Starter med "trigger word"</li>
+							<li>Outgoing: ELLER Lever i én kanal</li>
+							<li>Outgoing: eller begge</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h3>Bots</h3>
+					<ul>
+						<li class="fragment">Gi mer personlighet</li>
+						<li class="fragment">Join / leave channels</li>
+						<li class="fragment">Emoji reactions</li>
+						<li class="fragment">Svare på spørsmål / lytte på tekst</li>
+						<li class="fragment">Events API: Kan vite om alt,<br /> men må spørre om lov</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Kan eksistere i én eller flere kanaler</li>
+							<li>Navn, bilde, bio, dm</li>
+							<li>upload files, add emoji reactions</li>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h3>Apps: En ferdigpakke</h3>
 					<ul>
 						<li class="fragment">Github (Bitbucket)</li>
 						<li class="fragment">Jenkins (TravisCI, CircleCI)</li>
@@ -213,67 +316,34 @@
 					</ul>
 
 					<p class="note fragment"><a href="https://bekk.slack.com/apps">bekk.slack.com/apps</a></p>
-
-				</section>
-				<section>
-					<h2>Men ofte lite customizable</h2>
-					<img src="./img/heroku.png" />
-					<ul>
-						<li class="fragment">Heroku har -ingen- konfigurasjon</li>
-						<li class="fragment">JIRA-integrasjons fungerer ikke nødvendigvis</li>
-						<li class="fragment">TODO: mer?</li>
-						<li class="fragment">Kan kreve tilganger/endringer man ikke får</li>
-					</ul>
 					<aside class="notes">
+						Ofte lite customizable
 						<ul>
-							<li>Heroku viser kun beskjed ved deploy</li>
-							<li>JIRA-integrasjon avhenger av versjon og konfigurasjon</li>
+							<li>Heroku har -ingen- konfigurasjon. Gir kun beskjed ved deploy</li>
+							<li>JIRA-integrasjons fungerer ikke nødvendigvis</li>
+							<li>TODO: mer?</li>
+							<li>Kan kreve tilganger/endringer man ikke får</li>
 						</ul>
-                    </aside>
-				</section>
-				<section>
-					<h2>Hvor nyttig er det?</h2>
-					<aside class="notes">
-						Er det faktisk nyttig for noe?
-                    </aside>
-				</section>
-				<section>
-					<h3>For PR og kodeendringer</h3>
-					<img src="./img/jira_merge.png" />
-					<aside class="notes">
-						Problem: PR blir liggende lenge.
+						Du kan lage en egen!
 					</aside>
-				</section>
-				<section>
-					<h3>For systemfeil og metrikker</h3>
-					<img src="./img/aws_logs.png" />
-					<aside class="notes">
-						Problem: Error logs er overfylte og ignorerte.
-					</aside>
-				</section>
-				<section>
-					<h3>For brukerfeedback</h3>
-					<img src="./img/fdesk.png" />
-					<aside class="notes">Problem: Utviklere får ikke høre direkte feedback fra brukere. Blir liggende "i systemet" og omformulert på veien til oss. </aside>
+
 				</section>
 				<section>
 					Custom Slack-integrasjoner
 				</section>
 				<section>
-					<section>
-						<!--Hva er Hubot?-->
-						<h2>Hubot</h2>
-						<img src="./img/hubot.jpg" />
-						<aside class="notes">
-							<li>Chat bot laget av github</li>
-							<li>Skrevet i Coffescript og Node.js</li>
-							<li>Enkel å konfigure</li>
-							<li>Enkel å deploye. Ferdig oppsett til heroku</li>
-							<li>Enkel å integrere med chats (Adaptere)</li>
-							<li>Enkel å lage scripts til</li>
-							<li>Eller finne ferdige scripts på nett</li>
-						</aside>
-					</section>
+					<!--Hva er Hubot?-->
+					<h1>Hubot</h1>
+					<img src="./img/hubot.jpg" />
+					<aside class="notes">
+						<li>Chat bot laget av github</li>
+						<li>Skrevet i Coffescript og Node.js</li>
+						<li>Enkel å konfigure</li>
+						<li>Enkel å deploye. Ferdig oppsett til heroku</li>
+						<li>Enkel å integrere med chats (Adaptere)</li>
+						<li>Enkel å lage scripts til</li>
+						<li>Eller finne ferdige scripts på nett</li>
+					</aside>
 				</section>
 				<section data-markdown>
 					## Installere Hubot
@@ -343,10 +413,11 @@
 					```
 				</section>
 				<section>
-					Spørsmål?
+					<h1>Workshop</h1>
+					<a href="https://github.com/bekk/chatops-workshop">github.com/bekk/chatops-workshop</a>
 				</section>
 				<section>
-					https://github.com/bekk/chatops-workshop
+					<h1>Til slutt</h1>
 				</section>
 			</div>
 		</div>
