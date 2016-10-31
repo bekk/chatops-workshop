@@ -21,5 +21,5 @@ Du er nå ferdig med hovedoppgavene til workshoppen. Du kan nå slå deg løs me
   - [Eastereggs:](https://github.com/bekk/chatops-workshop/blob/master/easteregg.md) Legg inn noen eastereggs som blir aktivert av og til når brukere sier noe.
   - [Adventkalender:](https://github.com/bekk/chatops-workshop/blob/master/adventkalender.md) Lag en bot-drevet adventkalender trekning.
 
-### Ekstra: Deploy Hubot
+### Hvis du vil: Deploy Hubot
 Når du endelig vil deploye Hubot-en din til en server for en mer permanent løsning så kan du lese de forskjellige metodene [her](https://hubot.github.com/docs/#deploying). Vi anbefaler å bruke Heroku, som er den offesielle metoden.
