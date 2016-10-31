@@ -1,6 +1,4 @@
-# Oppgave 3
-
-Et selvkonfigurerende bussorakel
+# Et selvkonfigurerende bussorakel
 
 ## Del 1 - installer redis
 
