@@ -1,4 +1,4 @@
-# Et selvkonfigurerende bussorakel
+# Ruter-powered bussavganger
 
 ## Del 1 - installer redis
 
