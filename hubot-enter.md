@@ -44,4 +44,4 @@ For å gi huboten din litt personlighet og gjøre den litt mindre statisk, prøv
 
 # Løsningsforslag
 
-https://github.com/bekk/chatops-workshop/blob/l%C3%B8sningsforslag/losningsforslag/hello.js
+[hello.js](https://github.com/bekk/chatops-workshop/blob/l%C3%B8sningsforslag/losningsforslag/hello.js)
