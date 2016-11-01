@@ -20,4 +20,5 @@ Du er nå ferdig med hovedoppgavene til workshoppen. Du kan nå slå deg løs me
 ### Ekstraoppgaver:
   - [Eastereggs:](https://github.com/bekk/chatops-workshop/blob/master/easteregg.md) Legg inn noen eastereggs som blir aktivert av og til når brukere sier noe.
   - [Adventkalender:](https://github.com/bekk/chatops-workshop/blob/master/adventkalender.md) Lag en bot-drevet adventkalender trekning.
+  - Les gjennom [dokumentasjonen](https://hubot.github.com/docs/scripting/) og test ut noe vi ikke har vært innom ennå; events, middelware og mere greier!
 
