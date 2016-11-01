@@ -1,5 +1,7 @@
 # Ruter-powered bussavganger
 
+Løsningsforslag til oppgaven finnes i [ruter.js](https://github.com/bekk/chatops-workshop/blob/l%C3%B8sningsforslag/losningsforslag/ruter.js)
+
 ## Del 1 - installer redis
 
 For lokal utvikling kjør `brew install redis` for å installerer. Start databasen med `brew services start redis` og den vil kjøre opp på `127.0.0.1:6379`. Du kan teste kjøringen med `redis-cli ping` og `redis-cli --help`
