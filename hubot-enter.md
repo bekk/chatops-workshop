@@ -1,5 +1,7 @@
 # Enter hubot
 
+Løsningsforslag til oppgaven finnes i [hello.js](https://github.com/bekk/chatops-workshop/blob/l%C3%B8sningsforslag/losningsforslag/hello.js)
+
 ## Del 1 - reply
 
 Sjekk ut mappen `scripts` og opprett en `hello.coffee` eller `hello.js`.
@@ -41,7 +43,3 @@ Sjekk ut avsnittet [Documenting Scripts](https://hubot.github.com/docs/scripting
 ## Del 4 - random
 
 For å gi huboten din litt personlighet og gjøre den litt mindre statisk, prøv å ta i bruk `res.random` til å gi tilfeldig responser på `hubot hello`
-
-# Løsningsforslag
-
-[hello.js](https://github.com/bekk/chatops-workshop/blob/l%C3%B8sningsforslag/losningsforslag/hello.js)
