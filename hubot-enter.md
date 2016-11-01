@@ -42,3 +42,6 @@ Sjekk ut avsnittet [Documenting Scripts](https://hubot.github.com/docs/scripting
 
 For å gi huboten din litt personlighet og gjøre den litt mindre statisk, prøv å ta i bruk `res.random` til å gi tilfeldig responser på `hubot hello`
 
+# Løsningsforslag
+
+https://github.com/bekk/chatops-workshop/blob/l%C3%B8sningsforslag/losningsforslag/hello.js
