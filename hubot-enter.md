@@ -1,5 +1,7 @@
 # Enter hubot
 
+Løsningsforslag til oppgaven finnes i [hello.js](https://github.com/bekk/chatops-workshop/blob/l%C3%B8sningsforslag/losningsforslag/hello.js) og [anyone.js](https://github.com/bekk/chatops-workshop/blob/l%C3%B8sningsforslag/losningsforslag/anyone.js)
+
 ## Del 1 - reply
 
 Sjekk ut mappen `scripts` og opprett en `hello.coffee` eller `hello.js`.

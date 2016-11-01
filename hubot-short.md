@@ -1,5 +1,7 @@
 # En bot-drevet url-shortener 
 
+Løsningsforslag til oppgaven finnes i [short.js](https://github.com/bekk/chatops-workshop/blob/l%C3%B8sningsforslag/losningsforslag/short.js)
+
 ## Del 1 - input
 
 Opprett kommandoen `hubot short <url>` som svarer med `Åja, så du synes <url> er litt for lang... La meg se om jeg kan hjelpe deg!`

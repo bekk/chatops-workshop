@@ -1,5 +1,7 @@
 # Ruter-powered bussavganger
 
+Løsningsforslag til oppgaven finnes i [ruter.js](https://github.com/bekk/chatops-workshop/blob/l%C3%B8sningsforslag/losningsforslag/ruter.js)
+
 ## Del 1 - installer redis
 
 Installer [redis](http://redis.io/) lokalt eller opprett en redis-instans på heroku. Om du har MacOS og brew installert, kan du bruke `brew install redis` og `brew services start redis`. 
