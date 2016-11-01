@@ -1,19 +1,19 @@
-# Oppgave 3
+# Ruter-powered bussavganger
 
-Et selvkonfigurerende bussorakel
+Løsningsforslag til oppgaven finnes i [ruter.js](https://github.com/bekk/chatops-workshop/blob/l%C3%B8sningsforslag/losningsforslag/ruter.js)
 
 ## Del 1 - installer redis
 
-For lokal utvikling kjør `brew install redis` for å installerer. Start databasen med `brew services start redis` og den vil kjøre opp på `127.0.0.1:6379`. Du kan teste kjøringen med `redis-cli ping` og `redis-cli --help`
+Installer [redis](http://redis.io/) lokalt eller opprett en redis-instans på heroku. Om du har MacOS og brew installert, kan du bruke `brew install redis` og `brew services start redis`. 
+
+Redis er defaultvalget til hubot og i `external-scripts.json` ligger allerede `hubot-redis-brain`. 
+
+Om du kjører lokalt, skal alt være ok når du har installert og startet databasen. Sjekk ut [kildekoden til hubot-redis-brain](https://github.com/hubot-scripts/hubot-redis-brain/blob/master/src/redis-brain.coffee#L29). Her ser vi at den defaulter til lokal database om et sett properties mangler.
 
 Hvis du kjører redis remote (eks når du har deployet hubot) så kan overstyre default linken ved å sette `REDIS_URL`. Eks: 
 ```
 export REDIS_URL=redis://passwd@192.168.0.1:16379/prefix
 ```
-
-Redis er defaultvalget til hubot og i `external-scripts.json` ligger allerede `hubot-redis-brain`. 
-
-Sjekk ut [kildekoden til hubot-redis-brain](https://github.com/hubot-scripts/hubot-redis-brain/blob/master/src/redis-brain.coffee). Her ser vi at den defaulter til lokal database om et set properties mangler.
 
 Start boten på nytt og se at noe tilsvarende logges under oppstart
 ```
@@ -32,7 +32,10 @@ I denne delen skal vi lage lagring og uthentingskommandoene som følger
 //   hubot ruter vis <alias> - vis info om aliaset
 ```
 
-Sjekk ut `Persistence` i [script-dokumentasjonen](https://github.com/github/hubot/blob/master/docs/scripting.md)
+Sjekk ut [Persistence](https://hubot.github.com/docs/scripting/#persistence)  i script-dokumentasjonen.
+
+For å finne et reelt stoppestedid, kan du søke etter stoppet du er interessert i [sanntidsinfoen](https://ruter.no/reiseplanlegger/Stoppested/(3010624)Oslo%20gate%20(Oslo)/Avganger/#st:1,sp:0,bp:0) til Ruter. Stoppestedid står i urlen etter du har utført et søk. I informasjonen her finner du også lineid (=rutenummer) og destinationtext(=endestasjon).
+
 
 ## Del 3 - reelle kall!
 

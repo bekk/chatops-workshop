@@ -1,12 +1,12 @@
-# Oppgave 2
+# En bot-drevet url-shortener 
 
-En bot-drevet url-shortener
+Løsningsforslag til oppgaven finnes i [short.js](https://github.com/bekk/chatops-workshop/blob/l%C3%B8sningsforslag/losningsforslag/short.js)
 
 ## Del 1 - input
 
 Opprett kommandoen `hubot short <url>` som svarer med `Åja, så du synes <url> er litt for lang... La meg se om jeg kan hjelpe deg!`
 
-Sjekk ut avsnittet `Capturing data` i [script-dokumentasjonen](https://github.com/github/hubot/blob/master/docs/scripting.md)
+Sjekk ut [Capturing data i script-dokumentasjonen](https://hubot.github.com/docs/scripting/#capturing-data)
 
 ## Del 2 - passord og sånt
 
@@ -24,7 +24,7 @@ API-keyen får du av ws-gjengen :)
 
 Ved å kjøre scriptet `sh start.sh` starter du nå Hubot og setter rett env-parametre.
 
-Info kan du finne i avsnittet `Environment variables` i [script-dokumentasjonen](https://github.com/github/hubot/blob/master/docs/scripting.md) for å skrive ut api-keyen også.
+Info kan du finne i avsnittet [Environment variables](https://hubot.github.com/docs/scripting/#environment-variables) for å skrive ut api-keyen også.
 
 ## Del 3 - http!
 
@@ -32,7 +32,7 @@ Vi skal nå kalle selve shorten-tjenesten hos google, se [apiet](https://develop
 
 Oppgaven går ut på at `hubot short <url>` nå skal svare deg med `<navn>: En kortere url er <short-url>`
 
-Se dokumentasjonen på hvordan sende http-request fra Hubot under `https://hubot.github.com/docs/scripting/` i [dokumentasjonen](https://hubot.github.com/docs/scripting/). Om du skriver js, er det også nyttig å se på lenken de henviser til i `node-scoped-http-client`.
+Se dokumentasjonen på hvordan sende http-request fra Hubot under [Making HTTP calls](https://hubot.github.com/docs/scripting/#making-http-calls). Om du skriver js, er det også nyttig å se på lenken de henviser til i `node-scoped-http-client`.
 
 Annet:
 * Få med `JSON.stringify` som i dokumentasjonseksempelet
