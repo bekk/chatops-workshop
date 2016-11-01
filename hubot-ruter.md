@@ -30,7 +30,10 @@ I denne delen skal vi lage lagring og uthentingskommandoene som følger
 //   hubot ruter vis <alias> - vis info om aliaset
 ```
 
-Sjekk ut [Persistence i script-dokumentasjonen](https://hubot.github.com/docs/scripting/#persistence)
+Sjekk ut [Persistence](https://hubot.github.com/docs/scripting/#persistence)  i script-dokumentasjonen.
+
+For å finne et reelt stoppestedid, kan du søke etter stoppet du er interessert i [sanntidsinfoen](https://ruter.no/reiseplanlegger/Stoppested/(3010624)Oslo%20gate%20(Oslo)/Avganger/#st:1,sp:0,bp:0) til Ruter. Stoppestedid står i urlen etter du har utført et søk. I informasjonen her finner du også lineid (=rutenummer) og destinationtext(=endestasjon).
+
 
 ## Del 3 - reelle kall!
 
