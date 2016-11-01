@@ -30,7 +30,7 @@ I denne delen skal vi lage lagring og uthentingskommandoene som følger
 //   hubot ruter vis <alias> - vis info om aliaset
 ```
 
-Sjekk ut `Persistence` i [script-dokumentasjonen](https://github.com/github/hubot/blob/master/docs/scripting.md)
+Sjekk ut [Persistence i script-dokumentasjonen](https://hubot.github.com/docs/scripting/#persistence)
 
 ## Del 3 - reelle kall!
 

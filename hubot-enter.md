@@ -6,7 +6,7 @@ Sjekk ut mappen `scripts` og opprett en `hello.coffee` eller `hello.js`.
 
 Vi vil lage et script som kan kalles slik `hubot hello` hvor boten svarer `Dittnavn: Hola!` tilbake
 
-I [script-dokumentasjonen](https://github.com/github/hubot/blob/master/docs/scripting.md) kan du lese mer om oppsettet av et script.
+I avsnittet [Hearing and responding](https://hubot.github.com/docs/scripting/#hearing-and-responding) og [Send &reply](https://hubot.github.com/docs/scripting/#send--reply) i script-dokumentasjonen kan du lese mer om oppsettet av et script. 
 
 Test ut at du får svar på formatene 
 
@@ -36,7 +36,7 @@ og at navnet ditt ikke er en del av bot-svaret
 
 Sjekk ut `hubot help` eller `hubot help hello` - den finnes mest sannsynligvis ikke..? Om ikke du har laget den allerede, litt forut for din tid ;)
 
-Sjekk ut avsnittet `Documenting Scripts` i [script-dokumentasjonen](https://github.com/github/hubot/blob/master/docs/scripting.md) og legg til dokumentasjon for `hello`-kommandoen. Husk at utkommentering av linjer er `//` om du skiver js :)
+Sjekk ut avsnittet [Documenting Scripts](https://hubot.github.com/docs/scripting/#documenting-scripts) og legg til dokumentasjon for `hello`-kommandoen. Husk at utkommentering av linjer er `//` om du skiver js :)
 
 ## Del 4 - random
 
