@@ -53,7 +53,7 @@ I [Ruters Api](http://reisapi.ruter.no/Help/Api/GET-Favourites-GetFavourites_fav
 
 Tips: 
 * Som avgangstid har vi benyttet `MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime` på elementene i  `MonitoredStopVisits` 
-* For å enklere behandle tid kan npm-modulen `moment` taes i bruk. Se dokumentasjon på [momentjs](momentjs.com) 
+* For å enklere behandle tid kan npm-modulen `moment` taes i bruk. Se dokumentasjon på [momentjs](momentjs.com) og [dependencies for Hubot](https://hubot.github.com/docs/scripting/#dependencies).
 * Moment har funksjoner for å gjøre om strings til tidspunkter og for å finne tidsforskjellen mellom nå og to tidspunkter.
 
 ## Ekstraoppgave:
