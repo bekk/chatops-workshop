@@ -231,7 +231,8 @@
 							<li>Kobler API endepunkt mot kanaler o.l.</li>
 							<li>App repository for Slack</li>
 							<li>Apps: Enklere bruk</li>
-							<li>Småfeatures: Emoji reactions</li>
+							<li>Småfeatures: Emoji reactions, autentisering</li>
+							<li>Betalt: gjestetilgang, unlimited integrasjoner</li>
 							<li>3. august 2013, 1mrd i okt 14, 2,8 i mar 15</li>
 						</ul>
 					</aside>
@@ -248,49 +249,71 @@
 				<section>
 					<h3>Slash commands</h3>
 					<ul>
+						<li class="fragment"><code>/command ... </code> -> JSON mot URL</li>
 						<li class="fragment">Team wide accessable</li>
 						<li class="fragment">Svarer til deg eller kanal</li>
+						<li class="fragment">Token for auth</li>
 					</ul>
 					<aside class="notes">
 						<ul>
+							<li>F.eks. Reminder: (standup, låse timer), Feed</li>
+							<li>custom /command ... sender JSON mot URL. Printer respons.</li>
 							<li>Team wide: Eksisterer overalt</li>
 							<li>Kan svare til deg eller til kanal du er i</li>
-							<li>Reminder: Kan vise f.eks. påminnelser for standup eller låse timer</li>
-							<li>Feed: En RSS-feed i kanalen!</li>
+							<li>Token (spesifikk for hver trigger)</li>
 						</ul>
                     </aside>
 				</section>
 				<section>
-					<h3>Webhooks</h3>
+					<h3>Webhook - outgoing</h3>
 					<ul>
-						<li class="fragment">To typer</li>
-						<li class="fragment">Kanal-spesifikke</li>
+						<li class="fragment">Triggerword -> JSON mot url</li>
+						<li class="fragment">Kanalspesifikk (i tillegg/steden for) triggerword</li>
+						<li class="fragment">(kan) svare til kanal</li>
+						<li class="fragment">Token for auth</li>
+						<li class="fragment">Kan "lytte"</li>
 					</ul>
 					<aside class="notes">
 						<ul>
-							<li>Incoming: By default én bestemt kanal, men kan overstyres</li>
-							<li>Incoming: Krever ikke endepunkt</li>
-							<li>Outgoing: ENTEN Starter med "trigger word"</li>
-							<li>Outgoing: ELLER Lever i én kanal</li>
-							<li>Outgoing: eller begge</li>
+							<li>Sender JSON hvis triggerword</li>
+							<li>KAN gi respons tilbake</li>
+							<li>Hva er forskjell fra slash?</li>
+							<li>- Kan lytte på alt i en kanal</li>
+							<li>- Kan plukke opp/parse setninger/skyte inn</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h3>Webhooks - Incoming</h3>
+					<ul>
+						<li class="fragment">Kanalspesifikk</li>
+						<li class="fragment">Kanal kan overstyres</li>
+						<li class="fragment">Krever ikke eget endepunkt</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>By default én kanal, kan overstyres i JSON
+							<li>Krever ikke endepunkt</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
 					<h3>Bots</h3>
 					<ul>
-						<li class="fragment">Gi mer personlighet</li>
+						<li class="fragment">En "programmatisk" bruker</li>
+						<li class="fragment">Svare til kanal eller bruker</li>
 						<li class="fragment">Join / leave channels</li>
 						<li class="fragment">Emoji reactions</li>
 						<li class="fragment">Svare på spørsmål / lytte på tekst</li>
-						<li class="fragment">Events API: Kan vite om alt,<br /> men må spørre om lov</li>
+						<li class="fragment">Events API: Kan vite om alt<span class="fragment",<br /> men må spørre om lov</span></li>
+						<li class="fragment">Krever ikke endepunkt</li>
 					</ul>
 					<aside class="notes">
 						<ul>
 							<li>Kan eksistere i én eller flere kanaler</li>
 							<li>Navn, bilde, bio, dm</li>
 							<li>upload files, add emoji reactions</li>
-							<li></li>
+							<li>Kan gi litt mer personlighe</li>
 						</ul>
 					</aside>
 				</section>
@@ -299,8 +322,10 @@
 					<ul>
 						<li class="fragment">Github (Bitbucket)</li>
 						<li class="fragment">Jenkins (TravisCI, CircleCI)</li>
-						<li class="fragment">Google Apps</li>
-						<li class="fragment">Heroku</li>
+						<li class="fragment">Google Apps, Heroku +++</li>
+						<li class="fragment">En samling av slash, hooks, bots</li>
+						<li class="fragment">Ofte lite customizable</li>
+						<li class="fragment">Du kan lage én</li>
 					</ul>
 
 					<p class="note fragment"><a href="https://bekk.slack.com/apps">bekk.slack.com/apps</a></p>
@@ -309,7 +334,6 @@
 						<ul>
 							<li>Heroku har -ingen- konfigurasjon. Gir kun beskjed ved deploy</li>
 							<li>JIRA-integrasjons fungerer ikke nødvendigvis</li>
-							<li>TODO: mer?</li>
 							<li>Kan kreve tilganger/endringer man ikke får</li>
 						</ul>
 						Du kan lage en egen!
