@@ -3,15 +3,15 @@
 Det første vi trenger å gjøre er å få vår egen hubot opp å kjøre =)
 
 ## Del 1: Installasjon
-Det første vi trenger er [node & npm](https://nodejs.org/en/download/). Når du installerer node så vil npm følge med.
+Vi trenger [node & npm](https://nodejs.org/en/download/). Når du installerer node så vil npm følge med.
 
 Deretter trenger vi [yeoman](http://yeoman.io/) og hubot-generatoren, som kan installeres slik: 
-  ```
- %  npm install -g yo generator-hubot
+ ```
+ npm install -g yo generator-hubot
  ```
 
 ## Del 2: Generer hubot
-Med yeoman installert er det på tide å generer vår første hubot-instanse. 
+Med yeoman installert er det på tide å generere vår første hubot-instans. 
 
 Lag en mappe hvor du ønsker å genere hubot. Yeoman bruker typisk dette mappenavnet som et forslag til botnavn.
 
@@ -28,7 +28,7 @@ Den viktigste delen her er hvilket adapter du ønsker å bruke. Adaptere er hubo
 
 Hubot har alltid et shell-adapter som følger med for å brukes lokalt og for lokal testing. 
 
-Det var det, nå har du din første fungerende bot! På tide å prøvekjøre vidunderet.
+Det var det, nå har du din første fungerende bot! På tide å prøvekjøre vidunderet!
 
 ## Del 3: Kjør hubot lokalt: 
 
@@ -65,12 +65,12 @@ bekkbot translate me from <source> into <target> <phrase> - Translates <phrase> 
 ship it - Display a motivation squirrel
 ```
 
-Legg merke til at shell-adapteret ikke er perfekt og krever av og til at du trykker enter for å kunne starte/sende nye bedskjeder til boten din. 
+Legg merke til at shell-adapteret ikke er perfekt og krever av og til at du trykker enter for å kunne starte/sende nye beskjeder til boten din. 
 
 Du må som oftest bruke navnet på boten din for å kunne kjøre de forskjellige kommandoene, uten vil du ikke få noe svar. Det finnes også unntak som `ship it`-teksten som trigger en kommando uansett. Vi skal se mer på disse forskjellene videre i workshopen. 
 
-## Del 4: Kjør hubot mot slack
-Det er fult muligt å kjøre opp hubot mot slack også lokalt. Slik at du kan teste om alt funker som du vil før du eventuelt deployer hubot til en server:
+## Del 4: Kjør hubot mot Slack
+Det er fullt mulig å kjøre opp hubot mot Slack også lokalt. Slik at du kan teste om alt funker som du vil før du eventuelt deployer hubot til en server:
 - I Slack-appen, gå til [```BEKK``` > ```App & integrations```](https://bekk.slack.com/apps).
 - Søk etter [```Hubot```](https://bekk.slack.com/apps/A0F7XDU93-hubot)
 - Klikk ```Add configuration``` for å legge til din egen hubot integrasjon.
@@ -79,7 +79,7 @@ Det er fult muligt å kjøre opp hubot mot slack også lokalt. Slik at du kan te
   ```sh
   export HUBOT_SLACK_TOKEN=xoxb-95557811333-0jwofbjdGDGPPgEQiqmeFHDw
   ```
-- Start opp hubot med følgende for å få den til å koble seg til bekk slack-en:
+- Start opp hubot med følgende for å få den til å koble seg til BEKK sin Slack:
   
   ```sh 
   bin/hubot -a slack
@@ -87,4 +87,6 @@ Det er fult muligt å kjøre opp hubot mot slack også lokalt. Slik at du kan te
 - Test den ut ved å snakke med den direkte som en bruker, eller inviterer den til diverse channels du er med i for å se hvordan den funker der. 
 
 ## Hvis du vil: Deploy Hubot
-Når du endelig vil deploye Hubot-en din til en server for en mer permanent løsning så kan du lese de forskjellige metodene [her](https://hubot.github.com/docs/#deploying). Vi anbefaler å bruke Heroku, som er den offesielle metoden.
+Når du endelig vil deploye hubot din til en server for en mer permanent løsning så kan du lese de forskjellige metodene [her](https://hubot.github.com/docs/#deploying). Vi anbefaler å bruke Heroku, som er den offisielle metoden. 
+
+

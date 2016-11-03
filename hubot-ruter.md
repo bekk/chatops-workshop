@@ -21,18 +21,18 @@ INFO hubot-redis-brain: Data for hubot brain retrieved from Redis
 
 ## Del 2 - lagring og uthenting
 
-Vi skal integrere mot [ruter](http://reisapi.ruter.no/Help/Api/GET-Favourites-GetFavourites_favouritesRequest), men vi ønsker å ikke å sende inn informasjonen `Stopid1-lineid1-destinationtext1` på hver gang. Vi skal altså lagre `Stopid1-lineid1-destinationtext1` som et alias som vi deretter kan bruke mot ruters API.
+Vi skal integrere mot [ruter](http://reisapi.ruter.no/Help/Api/GET-Favourites-GetFavourites_favouritesRequest), men vi ønsker å ikke å sende inn informasjonen `Stopid1-lineid1-destinationtext1` hver gang. Vi skal altså lagre `Stopid1-lineid1-destinationtext1` som et alias som vi deretter kan bruke mot ruters API.
 
 I denne delen skal vi lage lagring og uthentingskommandoene som følger
 ```
 // Commands:
-//   hubot ruter ny <alias> <stoppestedid> <linjenummer> <destinasjon> - legg til et alias for ruten på et enkelt stopp
+//   hubot ruter ny <alias> <stoppested-id> <linjenummer> <destinasjon> - legg til et alias for ruten på et enkelt stopp
 //   hubot ruter vis <alias> - vis info om aliaset
 ```
 
 Sjekk ut [Persistence](https://hubot.github.com/docs/scripting/#persistence)  i script-dokumentasjonen.
 
-For å finne et reelt stoppestedid, kan du søke etter stoppet du er interessert i [sanntidsinfoen](https://ruter.no/reiseplanlegger/Stoppested/(3010624)Oslo%20gate%20(Oslo)/Avganger/#st:1,sp:0,bp:0) til Ruter. Stoppestedid står i urlen etter du har utført et søk. I informasjonen her finner du også lineid (=rutenummer) og destinationtext(=endestasjon).
+For å finne et reelt stoppested-id, kan du søke etter stoppet du er interessert i [sanntidsinfoen](https://ruter.no/reiseplanlegger/Stoppested/(3010624)Oslo%20gate%20(Oslo)/Avganger/#st:1,sp:0,bp:0) til Ruter. Stoppested-id står i urlen etter du har utført et søk. I informasjonen her finner du også lineid (=rutenummer) og destinationtext(=endestasjon).
 
 
 ## Del 3 - reelle kall!
@@ -57,7 +57,7 @@ Tips:
 * Moment har funksjoner for å gjøre om strings til tidspunkter og for å finne tidsforskjellen mellom nå og to tidspunkter.
 
 ## Ekstraoppgave:
-Trekk ut stoppestedid til en egen persisteringskommando slik at man kan bruke navn på stoppested i kommandoen fra del 2.
+Trekk ut stoppested-id til en egen persisteringskommando slik at man kan bruke navn på stoppested i kommandoen fra del 2.
 
 
 

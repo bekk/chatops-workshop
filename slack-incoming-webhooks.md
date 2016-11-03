@@ -7,7 +7,7 @@ Incoming webhooks i Slack gir deg URL hvor man kan poste JSON-data for å vise b
 - Søk etter [```Incoming WebHooks```](https://bekk.slack.com/apps/A0F7XDUAZ-incoming-webhooks)
 - Klikk ```Add configuration``` og velg kanalen du opprettet under Slack-oppsettet.
 
-Notér deg ```Webhook URL```. Vi kommer til å bruke denne gjennom workshoppen.
+Noter deg ```Webhook URL```. Vi kommer til å bruke denne gjennom workshoppen.
 
 Her kan du også tilpasse brukernavn og ikon for beskjeder fra webhooken.
 

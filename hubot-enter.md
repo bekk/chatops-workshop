@@ -2,11 +2,11 @@
 
 ## Del 1 - reply
 
-Sjekk ut mappen `scripts` og opprett en `hello.coffee` eller `hello.js`.
+Sjekk ut mappen `scripts` og opprett enten `hello.coffee` eller `hello.js`.
 
-Vi vil lage et script som kan kalles slik `hubot hello` hvor boten svarer `Dittnavn: Hola!` tilbake
+Vi vil lage et script som kan kalles med `hubot hello` hvor boten svarer `Dittnavn: Hola!` tilbake.
 
-I avsnittet [Hearing and responding](https://hubot.github.com/docs/scripting/#hearing-and-responding) og [Send &reply](https://hubot.github.com/docs/scripting/#send--reply) i script-dokumentasjonen kan du lese mer om oppsettet av et script. 
+I avsnittet [Hearing and responding](https://hubot.github.com/docs/scripting/#hearing-and-responding) og [Send &reply](https://hubot.github.com/docs/scripting/#send--reply) i script-dokumentasjonen kan du lese mer om oppsettet av et script. Hvis du ønsker et par enkle eksempler i javascript, se [presentasjonen](https://bekk.github.io/chatops-workshop/#/28).
 
 Test ut at du får svar på formatene 
 
@@ -18,11 +18,11 @@ og ikke på formatet
 
 - hello
 
-og at navnet ditt er en del av svaret. Ved lokal utvikling er navnet ditt `Shell`
+samt at navnet ditt er en del av svaret. Ved lokal utvikling er navnet ditt `Shell`
 
 ## Del 2 - hear
 
-Opprett en ny fil `anyone.js|coffee`. Her vil vi ha et script som fanger opp dersom noen skriver `anyone`. Hubot skal svare med `Pick me! Pick me!` 
+Opprett en ny fil `anyone.js`/`anyone.coffee`. Her vil vi ha et script som fanger opp dersom noen skriver `anyone`. Hubot skal svare med `Pick me! Pick me!` 
 
 Test ut at du får svar på formatene 
 
