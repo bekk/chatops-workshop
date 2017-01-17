@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Slack, bot og chatops</title>
+		<title>Slack, hubot &amp; chatops</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -28,27 +28,8 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>Slack, bot &amp; chatops</h1>
+					<h1>Slack, hubot &amp; chatops</h1>
 					<p class="note">En workshop av Alexander, Tine og Tomas</p>
-				</section>
-				<section>
-					<h3>Hva skjer i dag?</h3>
-					<ol>
-						<li>Chatops</li>
-						<li>Slack</li>
-						<li>Hubot</li>
-						<li>Oppgaver</li>
-					</ol>
-					<aside class="notes">
-						Agenda for dagen
-                        <ul>
-							<li>Chatops: økt kommunikasjon, bedre dok, agile</li>
-							<li>Slack: features, integrasjoner, url-integrasjoner</li>
-							<li>Hubot: Når slacks innebygde ikke strekker til</li>
-							<li>Workshop: Oppgaver til slack og lage en egen bot</li>
-							<li>Klokka når er oppsummeringen?</li>
-                        </ul>
-                    </aside>
 				</section>
 				<section>
 					<h1>Chatops</h1>
@@ -150,15 +131,6 @@
                     </aside>
 				</section>
 				<section>
-					<h3>#sukker</h3>
-					<img src="./img/plogg.png"/>
-					<aside class="notes">
-						<ul>
-							<li>Info til alle</li>
-						</ul>
-                    </aside>
-				</section>
-				<section>
 					<h3>#random</h3>
 					<img src="./img/middag.png"/>
 					<aside class="notes">
@@ -171,14 +143,6 @@
 				<section>
 					<h3>#jenkins</h3>
 					<img src="./img/alex_jenkins.png"/>
-				</section>
-				<section>
-					<h3>#jenkins</h3>
-					<img src="./img/alex_humor.png"/>
-				</section>
-				<section>
-					<h3>#jenkins</h3>
-					<img src="./img/alex_humor2.png"/>
 				</section>
 				<section>
 					<h3>#production_deploy</h3>
@@ -221,8 +185,6 @@
 						<li class="fragment">+ Enklere integrering</li>
 						<li class="fragment">+ App/bot repository</li>
 						<li class="fragment">+ Mobil/Desktop apps</li>
-						<li class="fragment">+ Småfeatures</li>
-						<li class="fragment">4 * 10<sup>9</sup> $</li>
 					</ul>
 					<aside class="notes">
 						<ul>
@@ -232,19 +194,8 @@
 							<li>App repository for Slack</li>
 							<li>Apps: Enklere bruk</li>
 							<li>Småfeatures: Emoji reactions, autentisering</li>
-							<li>Betalt: gjestetilgang, unlimited integrasjoner</li>
-							<li>3. august 2013, 1mrd i okt 14, 2,8 i mar 15</li>
 						</ul>
 					</aside>
-				</section>
-				<section>
-					<h2>Integrasjoner</h2>
-					<ul class="fragment">
-						<li>Slash Commands</li>
-						<li>Webhooks</li>
-						<li>Bots</li>
-						<li>Apps</li>
-					</ul>
 				</section>
 				<section>
 					<h3>Slash commands</h3>
@@ -325,7 +276,7 @@
 						<li class="fragment">Google Apps, Heroku +++</li>
 						<li class="fragment">En samling av slash, hooks, bots</li>
 						<li class="fragment">Ofte lite customizable</li>
-						<li class="fragment">Du kan lage én</li>
+						<li class="fragment">Du kan lage en</li>
 					</ul>
 
 					<p class="note fragment"><a href="https://bekk.slack.com/apps">bekk.slack.com/apps</a></p>
@@ -361,38 +312,6 @@
 					<h2>Arkitektur</h2>
 					<img src="./img/hubot.png"/>
 				</section>
-				<section>
-					<h2>Lage et script</h2>
-					<aside class="notes">
-					 <li>Leve i hubots script load path</li>
-					 <li>Være en .js eller .coffee fil</li>
-					 <li>Eksportere en funksjon</li>
-				 </aside>
-					<code data-markdown>
-						```js
-						module.exports = function (robot) {
-							// your code here
-						}
-						```
-					</code>
-				</section>
-				<section data-markdown>
-					```js
-					// Description:
-					//   Beskrivelse av scriptet ditt som vises i help
-					//
-					// Commands:
-					//   hubot cmd - hvilken cmd dette scriptet legger til
-
-
-					module.exports = function (robot) {
-						robot.respond(regex , function(res){
-							// Do something with res (Response object)
-						})
-					}
-					```
-				</section>
-
 				<section data-markdown>
 					```js
 					// Description:
@@ -403,9 +322,8 @@
 
 
 					module.exports = function (robot) {
-						robot.respond(/hello/ ,function(res){
-							var welcomes = ["Hola!", "Hei!"]
-							res.reply(res.random(welcomes));
+						robot.respond(/hello/, function(res){
+							res.reply("Velkommen til workshop!");
 						})
 					}
 					```
@@ -415,24 +333,8 @@
 					<a href="https://github.com/bekk/chatops-workshop">github.com/bekk/chatops-workshop</a>
 					<aside class="notes">
 						<li>Skal ta dere igjennom oppsett, installasjon etc for å starte med chatops i Slack og hubot</li>
-						<li>Dere vil få en inføring i hvordan sette opp deres egen hubot</li>
+						<li>Dere vil få en innføring i hvordan sette opp deres egen hubot</li>
 						<li>Både lokalt og eksternt om dere ønsker det</li>
-					</aside>
-				</section>
-				<section>
-					<h1>Til slutt</h1>
-					<aside class="notes">
-						<ul>
-							<li>Gir verdi i prosjekt: onboard, dok, effektivitet, feilhåndtering og monitorering</li>
-							<li>Finnes mange apps</li>
-							<li>Lett å lage egne</li>
-							<li>Selv om man ikke kan bruke slack</li>
-							<li>Selv om man er innenfor sikkerhet</li>
-							<li>LURER PÅ NOE??</li>
-							<li>Håper dere finner bruksområder</li>
-							<li>Spørre oss om Slack/Hubot</li>
-							<li>Tilbakemelding</li>
-						</ul>
 					</aside>
 				</section>
 			</div>
