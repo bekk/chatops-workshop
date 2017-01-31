@@ -21,7 +21,7 @@ INFO hubot-redis-brain: Data for hubot brain retrieved from Redis
 
 ## Del 2 - lagring og uthenting
 
-Vi skal integrere mot [ruter](http://reisapi.ruter.no/Help/Api/GET-Favourites-GetFavourites_favouritesRequest), men vi ønsker å ikke å sende inn informasjonen `Stopid1-lineid1-destinationtext1` hver gang. Vi skal altså lagre `Stopid1-lineid1-destinationtext1` som et alias som vi deretter kan bruke mot ruters API.
+Vi skal integrere mot Oslos kollektivsanntid hos [Ruter](http://reisapi.ruter.no/Help/Api/GET-Favourites-GetFavourites_favouritesRequest), men vi ønsker å ikke å sende inn informasjonen `Stopid1-lineid1-destinationtext1` hver gang. Vi skal altså lagre `Stopid1-lineid1-destinationtext1` som et alias som vi deretter kan bruke mot Ruters API.
 
 I denne delen skal vi lage lagring og uthentingskommandoene som følger
 ```
