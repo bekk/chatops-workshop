@@ -9,5 +9,5 @@ Slackbot er en bot som kommer ferdigoppsatt når man lager oppretter et team hos
 
 Det er mulig å konfigurere slackbot gjennom [bekk-workshop.slack.com/customize/slackbot](https://bekk-workshop.slack.com/customize/slackbot). Her kan du legge til ord som trigger ulike responser fra Slackbot hvis de blir skrevet. Finn på noen selv. 
 
-## Del 3: Søk i app-catalogen
+## Del 3: Søk i app-katalogen
 Man kan også legge til diverse apps av ulike typer ved å gå til [bekk-workshop.slack.com/apps](https://bekk-workshop.slack.com/apps). Søk eller browse gjennom appene – finner du en kul en du kunne tenke deg å prøve?
