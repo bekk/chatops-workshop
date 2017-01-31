@@ -182,101 +182,46 @@
 					<h1>Slack</h1>
 					<ul>
 						<li class="fragment">IRC</li>
+						<li class="fragment">+ Enklere adopsjon</li>
 						<li class="fragment">+ Enklere integrering</li>
 						<li class="fragment">+ App/bot repository</li>
-						<li class="fragment">+ Mobil/Desktop apps</li>
 					</ul>
 					<aside class="notes">
 						<ul>
 							<li>"Searchable Log of All Conversation and Knowledge"</li>
 							<li>IRC-like: Chatrooms, pm, channels</li>
+							<li>Lavere terskel m/mobilapps, desktop, registrering</li>
 							<li>Kobler API endepunkt mot kanaler o.l.</li>
 							<li>App repository for Slack</li>
-							<li>Apps: Enklere bruk</li>
 							<li>Småfeatures: Emoji reactions, autentisering</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
-					<h3>Slash commands</h3>
+					<h3>Slack: Integrasjoner</h3>
 					<ul>
-						<li class="fragment"><code>/command ... </code> -> JSON mot URL</li>
-						<li class="fragment">Team wide accessable</li>
-						<li class="fragment">Svarer til deg eller kanal</li>
-						<li class="fragment">Token for auth</li>
+						<li class="fragment">Slash commands</li>
+						<li class="fragment">Outgoing webhook</li>
+						<li class="fragment">Incoming webhook</li>
+						<li class="fragment">Bots</li>
 					</ul>
 					<aside class="notes">
 						<ul>
-							<li>F.eks. Reminder: (standup, låse timer), Feed</li>
-							<li>custom /command ... sender JSON mot URL. Printer respons.</li>
-							<li>Team wide: Eksisterer overalt</li>
-							<li>Kan svare til deg eller til kanal du er i</li>
-							<li>Token (spesifikk for hver trigger)</li>
-						</ul>
-                    </aside>
-				</section>
-				<section>
-					<h3>Webhook - outgoing</h3>
-					<ul>
-						<li class="fragment">Triggerword -> JSON mot url</li>
-						<li class="fragment">Kanalspesifikk (i tillegg/steden for) triggerword</li>
-						<li class="fragment">(kan) svare til kanal</li>
-						<li class="fragment">Token for auth</li>
-						<li class="fragment">Kan "lytte"</li>
-					</ul>
-					<aside class="notes">
-						<ul>
-							<li>Sender JSON hvis triggerword</li>
-							<li>KAN gi respons tilbake</li>
-							<li>Hva er forskjell fra slash?</li>
-							<li>- Kan lytte på alt i en kanal</li>
-							<li>- Kan plukke opp/parse setninger/skyte inn</li>
+							<li>Slash: Tilgj. team wide. Svarer deg || kanal</li>
+							<li>Outgoing WH: (Kanalspesifikk) || triggerword.</li>
+							<li>Incoming WH: Kanalspesifikk, kan overstyres</li>
+							<li>Bots: Gjøre "alt", joine channel, event api, emoji</li>
+							<li>Slack sender tokens til endpunkt.</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
-					<h3>Webhooks - Incoming</h3>
+					<h3>Slack Apps <br/><small>- en integrasjonspakke</small></h3>
 					<ul>
-						<li class="fragment">Kanalspesifikk</li>
-						<li class="fragment">Kanal kan overstyres</li>
-						<li class="fragment">Krever ikke eget endepunkt</li>
-					</ul>
-					<aside class="notes">
-						<ul>
-							<li>By default én kanal, kan overstyres i JSON
-							<li>Krever ikke endepunkt</li>
-						</ul>
-					</aside>
-				</section>
-				<section>
-					<h3>Bots</h3>
-					<ul>
-						<li class="fragment">En "programmatisk" bruker</li>
-						<li class="fragment">Svare til kanal eller bruker</li>
-						<li class="fragment">Join / leave channels</li>
-						<li class="fragment">Emoji reactions</li>
-						<li class="fragment">Svare på spørsmål / lytte på tekst</li>
-						<li class="fragment">Events API: Kan vite om alt<span class="fragment",<br /> men må spørre om lov</span></li>
-						<li class="fragment">Krever ikke endepunkt</li>
-					</ul>
-					<aside class="notes">
-						<ul>
-							<li>Kan eksistere i én eller flere kanaler</li>
-							<li>Navn, bilde, bio, dm</li>
-							<li>upload files, add emoji reactions</li>
-							<li>Kan gi litt mer personlighe</li>
-						</ul>
-					</aside>
-				</section>
-				<section>
-					<h3>Apps: En ferdigpakke</h3>
-					<ul>
-						<li class="fragment">Github (Bitbucket)</li>
-						<li class="fragment">Jenkins (TravisCI, CircleCI)</li>
-						<li class="fragment">Google Apps, Heroku +++</li>
 						<li class="fragment">En samling av slash, hooks, bots</li>
+						<li class="fragment">Du kan lage en!</li>
+						<li class="fragment">Github, Jenkins, Heroku ++</li>
 						<li class="fragment">Ofte lite customizable</li>
-						<li class="fragment">Du kan lage en</li>
 					</ul>
 
 					<p class="note fragment"><a href="https://bekk-workshop.slack.com/apps">bekk-workshop.slack.com/apps</a></p>

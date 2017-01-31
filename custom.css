@@ -2,3 +2,5 @@
 	font-size: 1rem;
 	text-align: right;
 }
+
+.reveal small { font-size: 0.4em; }
