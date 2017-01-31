@@ -3,8 +3,8 @@
 Incoming webhooks i Slack gir deg URL hvor man kan poste JSON-data for å vise beskjeder i en kanal.
 
 ## Steg 1: Opprett en incoming webhook mot din kanal
-- I Slack-appen, gå til [```BEKK``` > ```App & integrations```](https://bekk.slack.com/apps).
-- Søk etter [```Incoming WebHooks```](https://bekk.slack.com/apps/A0F7XDUAZ-incoming-webhooks)
+- I Slack-appen, gå til [```bekk-workshop``` > ```App & integrations```](https://bekk-workshop.slack.com/apps).
+- Søk etter [```Incoming WebHooks```](https://bekk-workshop.slack.com/apps/A0F7XDUAZ-incoming-webhooks)
 - Klikk ```Add configuration``` og velg kanalen du opprettet under Slack-oppsettet.
 
 Noter deg ```Webhook URL```. Vi kommer til å bruke denne gjennom workshoppen.
