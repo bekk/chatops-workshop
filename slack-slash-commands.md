@@ -11,9 +11,9 @@ Vi kan også lage egne slash-kommandoer selv. Imotsetning til de fleste integras
 Slash commands gjør enten ```POST``` eller ```GET``` mot en URL du definerer. Payloaden den sender og responsen den forventer, er spesifikk for Slack. Man må med andre ord kjøre et offentlig tilgjengelig API-endepunkt for å sette opp Slash commands. Siden det sendes med et token i forespørslene, kan man dog verifisere at forespørslene kommer fra Slack.
 
 ## Steg 1: Opprett en slash command
-1. Gå til [apps](https://bekk.slack.com/apps) og søk etter ```Slash Commands```
+1. Gå til [apps](https://bekk-workshop.slack.com/apps) og søk etter ```Slash Commands```
 2. Velg en unik ```Command``` som (helst) inneholder navnet ditt
-3. I URL, benytt ```https://bekk-slack-slash-test.herokuapp.com/weather```. Både POST og GET vil fungere, men de vil svare bittelitt annerledes.
+3. I URL, benytt ```https://bekk-workshop-slack-slash-test.herokuapp.com/weather```. Både POST og GET vil fungere, men de vil svare bittelitt annerledes.
 4. Om du vil kan du endre navn, ikon og autocomplete help text.
 
 ## Steg 2: Test kommandoen
