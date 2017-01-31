@@ -25,7 +25,7 @@ Lag funksjonalitet for å legge til eller fjerne personer i trekningen. Bruk red
 Av og til er folk godissugende, eller premier blir ødelagt. Lag funksjonalitet for å legge til eller fjerne premier.
 
 ## Del 5: Av og til er alle borte 
-Jul er som kjent en helligdag i BEKK, og derfor er ingen på jobb denne dagen. Men vinnere trenger vi likevel. 
+Jul er en vanlig dag å ha fri, men vinnere trenger vi likevel. 
 Det er ganske kjipt å vente til etter jul for å høste godene. Lag muligheten til å trekke dager når man ønsker det. 
 
 ## Del 6: Stats
