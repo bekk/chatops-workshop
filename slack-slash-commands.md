@@ -3,7 +3,7 @@
 [Slash commands](https://api.slack.com/slash-commands) er spesialbeskjeder man kan gi for å trigge en respons fra Slack. Eksempel på det er [reminders](https://get.slack.help/hc/en-us/articles/208423427-Set-a-reminder), som lar deg sette opp en påminnelse:
 
 ```
-/remind me every sunday at 16 to låse timer at https://timekeeper.bekk.no/
+/remind me every friday at 14 to vafler i kantina!
 ```
 
 Vi kan også lage egne slash-kommandoer selv. Imotsetning til de fleste integrasjoner (inkl. incoming og outgoing webhooks), tilhører ikke slash commands en person eller går mot en kanal. **Slash commands trigge uansett hvilken kanal eller person som forsøker å bruker de**.
