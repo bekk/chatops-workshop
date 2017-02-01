@@ -1,5 +1,5 @@
 # Tilpassing av Slack
-Visste du at det er mulig å tilpasse Slack til deg og ditt team? Gå til [bekk-workshop.slack.com/customize](https://bekk-workshop.slack.com/customize) (finnes også i Slack under BEKK -> Customize Slack)
+Visste du at det er mulig å tilpasse Slack til deg og ditt team? Gå til [bekk-workshop.slack.com/customize](https://bekk-workshop.slack.com/customize) (finnes også i Slack under bekk-workshop -> Customize Slack)
 
 ## Del 1: Egendefinerte Emoji
 Gå til [bekk-workshop.slack.com/customize/emoji](https://bekk-workshop.slack.com/customize/emoji) for å lage til dine egendefinerte emojis. Legg til et par da =) 
