@@ -79,7 +79,7 @@ Det er fullt mulig å kjøre opp hubot mot Slack også lokalt. Slik at du kan te
   ```sh
   export HUBOT_SLACK_TOKEN=xoxb-95557811333-0jwofbjdGDGPPgEQiqmeFHDw
   ```
-- Start opp hubot med følgende for å få den til å koble seg til BEKK sin Slack:
+- Start opp hubot med følgende for å få den til å koble seg til bekk-workshop Slack-en:
   
   ```sh 
   bin/hubot -a slack
