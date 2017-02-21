@@ -32,7 +32,9 @@ I denne delen skal vi lage lagring og uthentingskommandoene som følger
 
 Sjekk ut [Persistence](https://hubot.github.com/docs/scripting/#persistence)  i script-dokumentasjonen.
 
-For å finne et reelt stoppested-id, kan du søke etter stoppet du er interessert i [sanntidsinfoen](https://ruter.no/reiseplanlegger/Stoppested/(3010624)Oslo%20gate%20(Oslo)/Avganger/#st:1,sp:0,bp:0) til Ruter. Stoppested-id står i urlen etter du har utført et søk. I informasjonen her finner du også lineid (=rutenummer) og destinationtext(=endestasjon).
+For å finne et reelt stoppested-id, kan du søke etter stoppet du er interessert i [sanntidsinfoen](https://ruter.no/reiseplanlegger/Stoppested/(2190021)Telenor%20Fornebu%20(B%C3%A6rum)/Avganger/#st:1,sp:0,bp:0) til Ruter. På bildet under ser du hva som tilsvarer stopid (1), lineid (2) og destinationtext(3) for eksempelsøket.
+
+![Stopid1-lineid1-destinationtext1 for 31-bussen til Fornebu](https://raw.githubusercontent.com/bekk/chatops-workshop/master/img/ruter.png)
 
 
 ## Del 3 - reelle kall!
