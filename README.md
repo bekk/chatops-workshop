@@ -26,8 +26,8 @@ __Vanskeliggrad:__
 Du er nå ferdig med hovedoppgavene til workshoppen. Du kan nå slå deg løs med å lage andre kule Hubot-scripts som du tenker er kule eller nyttige for deg og dit prosjekt. Hvis du ikke kommer på noe selv, så må du gjerne se i ekstraoppgavene under for andre artige oppgaver du kan jobbe med.
 
 ### Ekstraoppgaver:
+  - Les gjennom [dokumentasjonen](https://hubot.github.com/docs/scripting/) og test ut noe vi ikke har vært innom ennå; events, middelware og mere greier!
   - [Eastereggs:](https://github.com/bekk/chatops-workshop/blob/master/easteregg.md) Legg inn noen eastereggs som blir aktivert av og til når brukere sier noe. :bomb:
   - [Bursdagspåminneren:](https://github.com/bekk/chatops-workshop/blob/master/bursdag.md) Lag en bot-drevet bursdagspåminner. :bomb:
   - [Bash-scripts:](https://github.com/bekk/chatops-workshop/blob/master/bashscripts.md) Få Hubot til å kjøre bash scripts. :bomb:
-  - Les gjennom [dokumentasjonen](https://hubot.github.com/docs/scripting/) og test ut noe vi ikke har vært innom ennå; events, middelware og mere greier!
 
