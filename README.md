@@ -3,7 +3,7 @@
 Presentasjon på [bekk.github.io/chatops-workshop](https://bekk.github.io/chatops-workshop/#/)
 
 # Oppgaver
-Under finner du diverse oppgaver for å hjelpe deg igang. Her kan du velge oppgaver etter hvor god kontroll du har på temaet. Du bør gjøre Oppsett først, men ellers er oppgavene er uavhengig av hverandre. Hvis du ønsker å fokusere med på Slack eller Hubot, så kan du starte der du vil. Sjekk vanskelighetsgradene for en pekepinne hvor vanskelig de ulike oppgavene er.
+Under finner du diverse oppgaver for å hjelpe deg igang. Her kan du velge oppgaver etter hvor god kontroll du har på temaet. Du bør gjøre Oppsett først, men ellers er oppgavene er uavhengig av hverandre. Så kan du starte der du vil litt ut fra hva du ønsker å lære/fokusere på. Sjekk vanskelighetsgradene for en pekepinne hvor vanskelig de ulike oppgavene er.
 
 __Vanskeliggrad:__
 - :heart: : Enkle oppgaver 
