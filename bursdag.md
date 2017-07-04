@@ -8,6 +8,7 @@ Noen deler kan man hoppe over hvis man føler de ikke er noen vits :smile:
  
 ## Del 1: MVP
 Lag et script som hver dag rett før lunsj sjekker om noen har bursdag. Det burde være kake. :cake:
+
 Til å begynne med kan alle på prosjektet være hardkodet i scriptet.
  
 Tips: Sjekk ut [node-cron](https://github.com/kelektiv/node-cron) for info hvordan man kan få et script til å kjøre på visse dager og klokkeslett
@@ -25,6 +26,7 @@ Lag muligheten til å se alle bursdager lagt inn i systemet.
  
 ## Del 5: Påminnelse
 Hvis det er en spesiell bursdag som kommer snart så er det kanskje greit at alle andre får en liten påminnelse et par dager før selve dagen. Så vi er sikker på at dagen blir ekstra god for bursdagsbarnet :rocket::boom::confetti_ball:
+
 Tilpass scriptet så det sier i fra til resten av teamet (hver enkelt person) om at en spesiell bursdag er om et par dager. En spesiell bursdag kan for eksempel være alle bursdager som går opp i 10. 
  
  
