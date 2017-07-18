@@ -6,7 +6,7 @@ Sjekk ut mappen `scripts` og opprett enten `hello.coffee` eller `hello.js`.
 
 Vi vil lage et script som kan kalles med `hubot hello` hvor boten svarer `Dittnavn: Hola!` tilbake.
 
-I avsnittet [Hearing and responding](https://hubot.github.com/docs/scripting/#hearing-and-responding) og [Send &reply](https://hubot.github.com/docs/scripting/#send--reply) i script-dokumentasjonen kan du lese mer om oppsettet av et script. Hvis du ønsker et par enkle eksempler i javascript, se [presentasjonen](https://bekk.github.io/chatops-workshop/#/28).
+I avsnittet [Hearing and responding](https://hubot.github.com/docs/scripting/#hearing-and-responding) og [Send & reply](https://hubot.github.com/docs/scripting/#send--reply) i script-dokumentasjonen kan du lese mer om oppsettet av et script. Hvis du ønsker et par enkle eksempler i javascript, se [presentasjonen](https://bekk.github.io/chatops-workshop/#/28).
 
 Test ut at du får svar på formatene 
 
