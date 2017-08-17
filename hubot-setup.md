@@ -71,7 +71,7 @@ Du må som oftest bruke navnet på boten din for å kunne kjøre de forskjellige
 
 ## Del 4: Kjør hubot mot Slack
 Det er fullt mulig å kjøre opp hubot mot Slack også lokalt. Slik at du kan teste om alt funker som du vil før du eventuelt deployer hubot til en server:
-- I Slack-appen, gå til [```ChatOps``` > ```App & integrations```](https://chatops-ws.slack.com/apps).
+- I Slack-appen, gå til [```ChatOps``` > ```Manage apps```](https://chatops-ws.slack.com/apps).
 - Søk etter [```Hubot```](https://chatops-ws.slack.com/apps/A0F7XDU93-hubot)
 - Klikk ```Add configuration``` for å legge til din egen hubot integrasjon.
 - Eksporter slack tokenet ditt i terminalen. Du skal se det når du har lagt inn hubot integrasjonen din. Kommandoen skal se slik ut: 
