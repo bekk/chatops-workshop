@@ -6,7 +6,7 @@ Presentasjon på [bekk.github.io/chatops-workshop](https://bekk.github.io/chatop
 Under finner du diverse oppgaver for å hjelpe deg igang. Her kan du velge oppgaver etter hvor god kontroll du har på temaet. Du bør gjøre Oppsett først, men ellers er oppgavene er uavhengig av hverandre. Så kan du starte der du vil litt ut fra hva du ønsker å lære/fokusere på. Sjekk vanskelighetsgradene for en pekepinne hvor vanskelig de ulike oppgavene er.
 
 __Vanskeliggrad:__
-- :heart: : Enkle oppgaver 
+- :heart: : Enkle oppgaver
 - :dollar: : Middels oppgaver
 - :bomb: : Avanserte oppgaver
 
@@ -31,4 +31,5 @@ Du er nå ferdig med hovedoppgavene til workshoppen. Du kan nå slå deg løs me
   - [Bursdagspåminneren:](https://github.com/bekk/chatops-workshop/blob/master/bursdag.md) Lag en bot-drevet bursdagspåminner. :bomb:
   - [Bash-scripts:](https://github.com/bekk/chatops-workshop/blob/master/bashscripts.md) Få Hubot til å kjøre bash-scripts. :bomb:
   - [Været:](https://github.com/bekk/chatops-workshop/blob/master/weather.md) Hva blir været i morgen :dollar:
+  - [Hubot API:](https://github.com/bekk/chatops-workshop/blob/master/api.md) Sett opp hubot til å kunne motta og svare på http requests.
 
