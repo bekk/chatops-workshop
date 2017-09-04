@@ -2,7 +2,7 @@
 
 ## Del 1 - installer redis
 
-Installer [redis](http://redis.io/) lokalt eller opprett en redis-instans på heroku. Om du har MacOS og brew installert, kan du bruke `brew install redis` og `brew services start redis`. 
+Installer [redis](http://redis.io/) lokalt eller opprett en redis-instans på heroku. Om du har MacOS og brew installert, kan du bruke `brew install redis` og `brew services start redis`. OBS: Gratisversjonen av Redis på Heroku har [ikke persistens](https://devcenter.heroku.com/articles/heroku-redis#persistence), så data vil ikke bli lagret på tvers av en restart eller en kræsj. 
 
 Redis er defaultvalget til hubot og i `external-scripts.json` ligger allerede `hubot-redis-brain`. 
 
