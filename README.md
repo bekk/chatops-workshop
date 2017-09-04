@@ -31,5 +31,5 @@ Du er nå ferdig med hovedoppgavene til workshoppen. Du kan nå slå deg løs me
   - [Bursdagspåminneren:](https://github.com/bekk/chatops-workshop/blob/master/bursdag.md) Lag en bot-drevet bursdagspåminner. :bomb:
   - [Bash-scripts:](https://github.com/bekk/chatops-workshop/blob/master/bashscripts.md) Få Hubot til å kjøre bash-scripts. :bomb:
   - [Været:](https://github.com/bekk/chatops-workshop/blob/master/weather.md) Hva blir været i morgen :dollar:
-  - [Hubot API:](https://github.com/bekk/chatops-workshop/blob/master/api.md) Sett opp hubot til å kunne motta og svare på http requests.
+  - [Hubot API:](https://github.com/bekk/chatops-workshop/blob/master/api.md) Sett opp hubot til å kunne motta og svare på http requests. :dollar:
 
