@@ -32,4 +32,7 @@ Du er nå ferdig med hovedoppgavene til workshoppen. Du kan nå slå deg løs me
   - [Bash-scripts:](https://github.com/bekk/chatops-workshop/blob/master/extras/bashscripts.md) Få Hubot til å kjøre bash-scripts. :bomb:
   - [Været:](https://github.com/bekk/chatops-workshop/blob/master/extras/weather.md) Hva blir været i morgen :dollar:
   - [Hubot API:](https://github.com/bekk/chatops-workshop/blob/master/extras/api.md) Sett opp hubot til å kunne motta og svare på http requests. :dollar:
+  - [API-er du kan leke deg med:](https://github.com/bekk/chatops-workshop/blob/master/extras/cool-api.md) Liste med kule API-er du kan leke deg med :dollar:
+  
+  
 
