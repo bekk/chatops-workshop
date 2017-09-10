@@ -1,6 +1,6 @@
 # chatops-workshop
 
-Presentasjon på [bekk.github.io/chatops-workshop](https://bekk.github.io/chatops-workshop/#/)
+Presentasjon på [google docs](https://docs.google.com/presentation/d/1_Xsi4mf0gQTvnIgasmenNIGgcsLHGBle0qVK7DZnSmk/edit?usp=sharing)
 
 # Oppgaver
 Under finner du diverse oppgaver for å hjelpe deg igang. Her kan du velge oppgaver etter hvor god kontroll du har på temaet. Du bør gjøre Oppsett først, men ellers er oppgavene er uavhengig av hverandre. Så kan du starte der du vil litt ut fra hva du ønsker å lære/fokusere på. Sjekk vanskelighetsgradene for en pekepinne hvor vanskelig de ulike oppgavene er.
