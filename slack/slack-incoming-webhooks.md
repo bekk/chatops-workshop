@@ -23,12 +23,7 @@ curl -X POST -H 'Content-type: application/json' \
 
 Brukernavn og ikonet som ble satt i steg 1 er kun default-verdier. Man kan overstyre disse med input i JSON-dataen som sendes til hooken:
 ```
-curl -X POST -H 'Content-type: application/json' \
---data '{
-    "username": "ghost-bot",
-    "icon_emoji": ":ghost:",
-    "text": "BOO!"
-}' https://hooks.slack.com/services/REPLACE/THIS/WITHYOURHOOKURL
+curl -X POST --data-urlencode 'payload={"username": "ghost-bot", "text": "BOO!", "icon_emoji": ":ghost:"}' https://hooks.slack.com/services/REPLACE/THIS/WITHYOURHOOKURL
 ```
 
 Dette kan være en finfin måte å la en byggeserver si i fra om en nyttig byggejobb eller versjonskontrollsystemet si i fra om en ny pull-request!
