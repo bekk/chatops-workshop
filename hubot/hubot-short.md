@@ -18,7 +18,7 @@ export SHORTENER_API_KEY=XXXX
 bin/hubot
 ``` 
 
-API-keyen får du av ws-gjengen :)
+API-keyen får finner du i kanalen #api-token på Slack.
 
 Ved å kjøre scriptet `sh start.sh` starter du nå Hubot og setter rett env-parametre.
 
