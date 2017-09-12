@@ -1,4 +1,4 @@
-# Api-er du man kan leke seg med
+# API-er man kan leke seg med
 
 - Bysyklene https://developer.oslobysykkel.no/api
 - Emotions API: https://azure.microsoft.com/en-us/services/cognitive-services/emotion/
